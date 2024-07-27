@@ -1,4 +1,4 @@
-# Geometries of Time as a Fourth Spatial Dimension
+# Geometries of Time as a 4th Spatial Dimension
 
 ## Overview
 
