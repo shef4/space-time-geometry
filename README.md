@@ -55,7 +55,7 @@ To run the notebooks, you will need the following installed:
     jupyter notebook
     ```
 
-2. Open and run the notebooks in the `Notebooks` directory.
+2. Open and run the `sandbox` notebook.
 
 ## Contributions
 
