@@ -32,13 +32,13 @@ To run the notebooks, you will need the following installed:
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone https://github.com/yourusername/your-repo-name.git
+    git clone https://github.com/shef4/space-time-geometry.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd your-repo-name
+    cd space-time-geometry
     ```
 
 3. Install the required Python packages:
