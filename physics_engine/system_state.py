@@ -30,50 +30,49 @@ class SystemState(StateSpace):
         self.particles.append(particle)
 
     def plot_system(self):
-        for particle in self.particles:
+        for idx, particle in enumerate(self.particles):
+            fig = plt.figure(figsize=(12, 6))  # Adjusted for better spacing
+            ax1 = fig.add_subplot(141, projection='3d')
+
             x, y, z = self.get_space_time_grid()
             x_path, y_path, z_path = particle.get_path(self.get_timeline())
-
-            r, theta, phi = self.get_time_space_grid()
-            r_path, theta_path, phi_path = self.spatial_to_timodal(x_path, y_path, z_path)
-
-            fig = plt.figure(figsize=(12, 6))  # Adjusted for better spacing
-
-            ax1 = fig.add_subplot(141, projection='3d')
-            ax1.plot(x_path, y_path, z_path, color='r', label=particle.path_type + ' Path')
+            ax1.plot(x_path, y_path, z_path, color='r', label= 'particle_' + str(idx) +' Path')
             ax1.set_xlabel('X', fontsize=10, labelpad=15)
             ax1.set_ylabel('Y', fontsize=10, labelpad=15)
-            ax1.set_zlabel('Z', fontsize=10, labelpad=15)
             ax1.set_title('3D Space-Time Grid', fontsize=10)
             ax1.legend(fontsize=10)
 
+            r, theta, phi = self.get_time_space_grid()
+            r_path, theta_path, phi_path = self.spatial_to_timodal(x_path, y_path, z_path)
             ax2 = fig.add_subplot(142, projection='polar')
-            ax2.plot(phi_path, r_path, color='r', label=particle.path_type + ' Path')
+            ax2.plot(phi_path, r_path, color='r', label='particle_' + str(idx) +' Path')
             ax2.plot(phi[self.end_time//2, :, :], r[self.end_time//2, :, :], color='b')
-            ax2.set_xlabel('X', fontsize=10, labelpad=15)
-            ax2.set_ylabel('Y', fontsize=10, labelpad=15)
+            ax2.set_xlabel('Phi', fontsize=10, labelpad=15)
+            ax2.set_ylabel('Radius', fontsize=10, labelpad=15)
             ax2.set_title('Time-Space Grid (Phi-R)', fontsize=10)
             ax2.legend(fontsize=10)
-
             ax3 = fig.add_subplot(143, projection='polar')
-            ax3.plot(theta_path, r_path, color='r', label=particle.path_type + ' Path')
+            ax3.plot(theta_path, r_path, color='r', label='particle_' + str(idx) +' Path')
             ax3.plot(theta[:, :, self.end_time//2], r[:, :, self.end_time//2], color='b')
             ax3.set_xlabel('Theta', fontsize=10, labelpad=15)
             ax3.set_ylabel('Radius', fontsize=10, labelpad=15)
             ax3.set_title('Time-Space Grid (Theta-R)', fontsize=10)
             ax3.legend(fontsize=10)
-
             ax4 = fig.add_subplot(144, projection='polar')
-            ax4.plot(theta_path, phi_path, color='r', label=particle.path_type + ' Path')
+            ax4.plot(theta_path, phi_path, color='r', label='particle_' + str(idx) +' Path')
             ax4.plot(theta[:, self.end_time//2, :], phi[:, self.end_time//2, :], color='b')
             ax4.set_xlabel('Theta', fontsize=10, labelpad=15)
-            ax4.set_ylabel('Radius', fontsize=10, labelpad=15)
+            ax4.set_ylabel('Phi', fontsize=10, labelpad=15)
             ax4.set_title('Time-Space Grid (Theta-Phi)', fontsize=10)
             ax4.legend(fontsize=10)
 
             plt.tight_layout()
             plt.savefig('plot_system.pdf', bbox_inches='tight')
             plt.show()
+
+            print("particles linear velocity",particle.linear_v)
+            print("particles angular velocity",particle.angular_v)
+            print("particles spin_states velocity",particle.spin_states)
 
 # Font settings and sizes
 plt.rc('font', size=8)
