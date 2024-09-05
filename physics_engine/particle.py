@@ -1,6 +1,7 @@
+from .state_space import StateSpace
 import numpy as np
 
-class Particle:
+class Particle(StateSpace):
     def __init__(self, initial_r, initial_theta, initial_phi, initial_velocity, spin_frequency=1.0, spin_amplitude=1.0):
         """
         Initialize the Particle with its properties.
@@ -20,10 +21,19 @@ class Particle:
         self.spin_frequency = spin_frequency
         self.spin_amplitude = spin_amplitude
         
-        # Extract velocities and spins from the dictionary
-        self.linear_v = initial_velocity.get('linear_v', {'x': 0, 'y': 0, 'z': 0})
-        self.angular_v = initial_velocity.get('angular_v', {'xy': 0, 'xz': 0, 'yz': 0})
-        self.spin_states = initial_velocity.get('spin_states', {'xy': 0, 'xz': 0, 'yz': 0})
+        # Extract velocities and spins from the dictionaryinitial_velocity = {
+        self.linear_v = initial_velocity.get(
+            'linear_v', 
+            {'x': 0, 'y': 0, 'z': 0, 't':StateSpace.c}
+        )
+        self.angular_v = initial_velocity.get(
+            'angular_v', 
+            {'xy': 0, 'yz': 0,'xz': 0, 'zt': 0, 'yt': 0, 'xt': 0}
+        )
+        self.spin_states = initial_velocity.get(
+              'spin_states', 
+            {'xy': 0, 'yz': 0,'xz': 0, 'zt': 0, 'yt': 0, 'xt': 0}
+        )
 
     
     def get_path(self, t):
