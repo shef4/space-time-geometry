@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1733977376.14323 "/Users/sefunmiashiru/Dev/space-time-geometry/paper/spectime.tex" "spectime.pdf" "spectime" 1733977376.57517 0
-  "/Users/sefunmiashiru/Dev/space-time-geometry/paper/spectime.tex" 1733977266.43183 6828 f7ab13baea4c7d340e4c333189650de2 ""
+["pdflatex"] 1733982991.48442 "/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex" "ripples_in_spacetime.pdf" "ripples_in_spacetime" 1733982991.92881 0
+  "/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex" 1733982839.08887 6804 6a7e0a0f5ae4ee8d61bd8d1451a24525 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -96,14 +96,14 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1733976318.45761 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1733976229 8221429 b2bc7f0fd28deab67b74c323eb0ed617 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "spectime.aux" 1733977376.52908 2289 84776032b192af0273b88a898a964f30 "pdflatex"
-  "spectime.out" 1733977376.52971 2808 83f7b462a09354373d4d3a9146eee875 "pdflatex"
-  "spectime.tex" 1733977266.43183 6828 f7ab13baea4c7d340e4c333189650de2 ""
-  "spectime.toc" 1733977376.52987 1430 61ae52844166810e26c9aa709b21287d "pdflatex"
+  "ripples_in_spacetime.aux" 1733982991.88267 2289 84776032b192af0273b88a898a964f30 "pdflatex"
+  "ripples_in_spacetime.out" 1733982991.88332 2808 83f7b462a09354373d4d3a9146eee875 "pdflatex"
+  "ripples_in_spacetime.tex" 1733982839.08887 6804 6a7e0a0f5ae4ee8d61bd8d1451a24525 ""
+  "ripples_in_spacetime.toc" 1733982991.88348 1430 61ae52844166810e26c9aa709b21287d "pdflatex"
   (generated)
-  "spectime.aux"
-  "spectime.log"
-  "spectime.out"
-  "spectime.pdf"
-  "spectime.toc"
+  "ripples_in_spacetime.aux"
+  "ripples_in_spacetime.log"
+  "ripples_in_spacetime.out"
+  "ripples_in_spacetime.pdf"
+  "ripples_in_spacetime.toc"
   (rewritten before read)
