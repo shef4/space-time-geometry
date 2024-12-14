@@ -1,4 +1,6 @@
-numpy>=1.20.0
-matplotlib>=3.4.0
-numba>=0.53.0
-scipy>=1.6.0
+numpy
+scipy
+matplotlib
+jupyter
+pandas
+memory-profiler
