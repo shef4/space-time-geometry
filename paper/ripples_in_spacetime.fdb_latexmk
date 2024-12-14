@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1734162414.73447 "/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex" "ripples_in_spacetime.pdf" "ripples_in_spacetime" 1734162416.89739 0
-  "/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex" 1734162412.23613 48500 be2f755c359dd4eb2ce758951cb65d29 ""
+["pdflatex"] 1734164904.2424 "/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex" "ripples_in_spacetime.pdf" "ripples_in_spacetime" 1734164906.4646 0
+  "/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex" 1734164903.9824 48513 ace0c2f155f945590affc63b4fcf2fd6 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -131,10 +131,10 @@
   "images/tunneling_wavefunction_2d_polar_probability_density_with_phase.png" 1734147948.89295 369518 7c2630a03ce35a027ecb247daaee6f57 ""
   "images/tunneling_wavefunction_3d_polar_probability_density_with_phase.png" 1734147970.88014 199545 99e0595fdc641334fc8dc84a776b6bba ""
   "images/tunneling_wavefunction_probability_density_with_phase.png" 1734147948.53313 180553 f57eaa4d3e45e0a4d1b795bf3ab4ca39 ""
-  "ripples_in_spacetime.aux" 1734162416.8361 21439 89cb9c10e35bf69e89b363a3000d2023 "pdflatex"
-  "ripples_in_spacetime.out" 1734162416.83754 7159 18477fae77366c9265353e1ee6039360 "pdflatex"
-  "ripples_in_spacetime.tex" 1734162412.23613 48500 be2f755c359dd4eb2ce758951cb65d29 ""
-  "ripples_in_spacetime.toc" 1734162416.83773 5140 1730b13f65f1ca4fd3e6357aba6ef0b6 "pdflatex"
+  "ripples_in_spacetime.aux" 1734164906.39702 21439 89cb9c10e35bf69e89b363a3000d2023 "pdflatex"
+  "ripples_in_spacetime.out" 1734164906.39852 7159 18477fae77366c9265353e1ee6039360 "pdflatex"
+  "ripples_in_spacetime.tex" 1734164903.9824 48513 ace0c2f155f945590affc63b4fcf2fd6 ""
+  "ripples_in_spacetime.toc" 1734164906.39871 5140 1730b13f65f1ca4fd3e6357aba6ef0b6 "pdflatex"
   (generated)
   "ripples_in_spacetime.aux"
   "ripples_in_spacetime.log"
