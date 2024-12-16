@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.14)  15 DEC 2024 19:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.14)  16 DEC 2024 09:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -508,7 +508,16 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box66
 \@float@everytoks=\toks45
 \@floatcapt=\box67
-) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypatterns.code.tex
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+)) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypatterns.code.tex
 File: tikzlibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex
 File: pgflibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
@@ -570,29 +579,32 @@ File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count323
 \l__pdf_internal_box=\box88
+) (./ripples_in_spacetime.aux
+
+LaTeX Warning: Label `sec:validation_benchmarking' multiply defined.
+
 )
-No file ripples_in_spacetime.aux.
 \openout1 = `ripples_in_spacetime.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-(/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+ (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count324
 \scratchdimen=\dimen294
@@ -613,11 +625,13 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into your preamble.
- on input line 108.
+ on input line 68.
 
-Package hyperref Info: Link coloring OFF on input line 108.
+Package hyperref Info: Link coloring OFF on input line 68.
+(./ripples_in_spacetime.out) (./ripples_in_spacetime.out)
 \@outlinefile=\write4
 \openout4 = `ripples_in_spacetime.out'.
+
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -656,1859 +670,251 @@ Package hyperref Info: Link coloring OFF on input line 108.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 116.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 76.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 116.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 76.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-No file ripples_in_spacetime.toc.
+) (./ripples_in_spacetime.toc [1
+
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2])
 \tf@toc=\write5
 \openout5 = `ripples_in_spacetime.toc'.
 
-[1
-
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-
-LaTeX Warning: Reference `tab:preview_results' on page 2 undefined on input line 159.
-
-[2]
-
-LaTeX Warning: Reference `sec:validation_benchmarking' on page 3 undefined on input line 176.
-
-
-LaTeX Warning: Reference `appendix:A' on page 3 undefined on input line 210.
-
-
-LaTeX Warning: Reference `appendix:A' on page 3 undefined on input line 210.
-
-[3]
-
-LaTeX Warning: Reference `fig:single_xt' on page 4 undefined on input line 232.
-
-
-LaTeX Warning: Reference `fig:single_3d_polar_density' on page 4 undefined on input line 232.
-
-
-LaTeX Warning: Reference `fig:single_xt' on page 4 undefined on input line 235.
-
-
-LaTeX Warning: Reference `fig:single_xt' on page 4 undefined on input line 235.
-
-
-LaTeX Warning: Reference `fig:single_xt_density' on page 4 undefined on input line 242.
-
-
-LaTeX Warning: Reference `fig:single_xt_density' on page 4 undefined on input line 242.
-
-[4]
-
-LaTeX Warning: Reference `fig:single_2d_polar' on page 5 undefined on input line 249.
-
-
-LaTeX Warning: Reference `fig:single_2d_polar' on page 5 undefined on input line 249.
-
-
-LaTeX Warning: Reference `fig:single_2d_polar_density' on page 5 undefined on input line 256.
-
-
-LaTeX Warning: Reference `fig:single_2d_polar_density' on page 5 undefined on input line 256.
-
-
-LaTeX Warning: Reference `fig:single_3d_polar' on page 5 undefined on input line 263.
-
-
-LaTeX Warning: Reference `fig:single_3d_polar' on page 5 undefined on input line 263.
-
-
-LaTeX Warning: Reference `fig:single_3d_polar_density' on page 5 undefined on input line 270.
-
-
-LaTeX Warning: Reference `fig:single_3d_polar_density' on page 5 undefined on input line 270.
-
-<images/single_wavefunction_with_phase.png, id=57, 722.7pt x 433.62pt>
-File: images/single_wavefunction_with_phase.png Graphic file (type png)
-<use images/single_wavefunction_with_phase.png>
-Package pdftex.def Info: images/single_wavefunction_with_phase.png  used on input line 278.
-(pdftex.def)             Requested size: 362.37569pt x 217.4248pt.
-[5]
-<images/single_wavefunction_probability_density_with_phase.png, id=68, 722.7pt x 433.62pt>
-File: images/single_wavefunction_probability_density_with_phase.png Graphic file (type png)
-<use images/single_wavefunction_probability_density_with_phase.png>
-Package pdftex.def Info: images/single_wavefunction_probability_density_with_phase.png  used on input line 285.
-(pdftex.def)             Requested size: 362.37569pt x 217.4248pt.
-<images/single_wavefunction_2d_polar_with_phase.png, id=69, 867.24pt x 578.16pt>
-File: images/single_wavefunction_2d_polar_with_phase.png Graphic file (type png)
-<use images/single_wavefunction_2d_polar_with_phase.png>
-Package pdftex.def Info: images/single_wavefunction_2d_polar_with_phase.png  used on input line 292.
-(pdftex.def)             Requested size: 362.37569pt x 241.58163pt.
- [6 <./images/single_wavefunction_with_phase.png> <./images/single_wavefunction_probability_density_with_phase.png>]
-<images/single_wavefunction_2d_polar_probability_density_with_phase.png, id=78, 867.24pt x 578.16pt>
-File: images/single_wavefunction_2d_polar_probability_density_with_phase.png Graphic file (type png)
-<use images/single_wavefunction_2d_polar_probability_density_with_phase.png>
-Package pdftex.def Info: images/single_wavefunction_2d_polar_probability_density_with_phase.png  used on input line 299.
-(pdftex.def)             Requested size: 362.37569pt x 241.58163pt.
-<images/single_wavefunction_3d_polar_with_phase.png, id=79, 867.24pt x 578.16pt>
-File: images/single_wavefunction_3d_polar_with_phase.png Graphic file (type png)
-<use images/single_wavefunction_3d_polar_with_phase.png>
-Package pdftex.def Info: images/single_wavefunction_3d_polar_with_phase.png  used on input line 306.
-(pdftex.def)             Requested size: 362.37569pt x 241.58163pt.
- [7 <./images/single_wavefunction_2d_polar_with_phase.png> <./images/single_wavefunction_2d_polar_probability_density_with_phase.png>]
-<images/single_wavefunction_3d_polar_probability_density_with_phase.png, id=89, 867.24pt x 578.16pt>
-File: images/single_wavefunction_3d_polar_probability_density_with_phase.png Graphic file (type png)
-<use images/single_wavefunction_3d_polar_probability_density_with_phase.png>
-Package pdftex.def Info: images/single_wavefunction_3d_polar_probability_density_with_phase.png  used on input line 313.
-(pdftex.def)             Requested size: 362.37569pt x 241.58163pt.
- [8 <./images/single_wavefunction_3d_polar_with_phase.png> <./images/single_wavefunction_3d_polar_probability_density_with_phase.png>]
-
-LaTeX Warning: Reference `fig:superposition' on page 9 undefined on input line 325.
-
-
-LaTeX Warning: Reference `fig:superposition' on page 9 undefined on input line 325.
-
-
-LaTeX Warning: Reference `fig:superposition_2d_polar' on page 9 undefined on input line 333.
-
-
-LaTeX Warning: Reference `fig:superposition_2d_polar' on page 9 undefined on input line 333.
-
-
-LaTeX Warning: Reference `fig:superposition_3d' on page 9 undefined on input line 341.
-
-
-LaTeX Warning: Reference `fig:superposition_3d_polar' on page 9 undefined on input line 341.
-
-<images/superposition_wavefunction_probability_density_with_phase.png, id=98, 722.7pt x 433.62pt>
-File: images/superposition_wavefunction_probability_density_with_phase.png Graphic file (type png)
-<use images/superposition_wavefunction_probability_density_with_phase.png>
-Package pdftex.def Info: images/superposition_wavefunction_probability_density_with_phase.png  used on input line 350.
-(pdftex.def)             Requested size: 362.37569pt x 217.4248pt.
-[9]
-<images/superposition_wavefunction_2d_polar_probability_density_with_phase.png, id=108, 867.24pt x 578.16pt>
-File: images/superposition_wavefunction_2d_polar_probability_density_with_phase.png Graphic file (type png)
-<use images/superposition_wavefunction_2d_polar_probability_density_with_phase.png>
-Package pdftex.def Info: images/superposition_wavefunction_2d_polar_probability_density_with_phase.png  used on input line 357.
-(pdftex.def)             Requested size: 362.37569pt x 241.58163pt.
-<images/superposition_wavefunction_3d_polar_probability_density_with_phase.png, id=109, 867.24pt x 578.16pt>
-File: images/superposition_wavefunction_3d_polar_probability_density_with_phase.png Graphic file (type png)
-<use images/superposition_wavefunction_3d_polar_probability_density_with_phase.png>
-Package pdftex.def Info: images/superposition_wavefunction_3d_polar_probability_density_with_phase.png  used on input line 364.
-(pdftex.def)             Requested size: 362.37569pt x 241.58163pt.
- [10 <./images/superposition_wavefunction_probability_density_with_phase.png> <./images/superposition_wavefunction_2d_polar_probability_density_with_phase.png>]
-
-LaTeX Warning: Reference `fig:entangled' on page 11 undefined on input line 370.
-
-
-LaTeX Warning: Reference `fig:entangled' on page 11 undefined on input line 373.
-
-
-LaTeX Warning: Reference `fig:entangled' on page 11 undefined on input line 373.
-
-
-LaTeX Warning: Reference `fig:entangled_2d_polar' on page 11 undefined on input line 381.
-
-
-LaTeX Warning: Reference `fig:entangled_2d_polar' on page 11 undefined on input line 381.
-
-
-LaTeX Warning: Reference `fig:entangled_3d_polar' on page 11 undefined on input line 388.
-
-
-LaTeX Warning: Reference `fig:entangled_3d_polar' on page 11 undefined on input line 388.
-
-[11 <./images/superposition_wavefunction_3d_polar_probability_density_with_phase.png>]
-<images/entangled_wavefunction_probability_density_with_phase.png, id=127, 722.7pt x 433.62pt>
-File: images/entangled_wavefunction_probability_density_with_phase.png Graphic file (type png)
-<use images/entangled_wavefunction_probability_density_with_phase.png>
-Package pdftex.def Info: images/entangled_wavefunction_probability_density_with_phase.png  used on input line 397.
-(pdftex.def)             Requested size: 362.37569pt x 217.4248pt.
-<images/entangled_wavefunction_2d_polar_probability_density_with_phase.png, id=128, 867.24pt x 578.16pt>
-File: images/entangled_wavefunction_2d_polar_probability_density_with_phase.png Graphic file (type png)
-<use images/entangled_wavefunction_2d_polar_probability_density_with_phase.png>
-Package pdftex.def Info: images/entangled_wavefunction_2d_polar_probability_density_with_phase.png  used on input line 404.
-(pdftex.def)             Requested size: 362.37569pt x 241.58163pt.
- [12 <./images/entangled_wavefunction_probability_density_with_phase.png>]
-<images/entangled_wavefunction_3d_polar_probability_density_with_phase.png, id=136, 867.24pt x 578.16pt>
-File: images/entangled_wavefunction_3d_polar_probability_density_with_phase.png Graphic file (type png)
-<use images/entangled_wavefunction_3d_polar_probability_density_with_phase.png>
-Package pdftex.def Info: images/entangled_wavefunction_3d_polar_probability_density_with_phase.png  used on input line 411.
-(pdftex.def)             Requested size: 362.37569pt x 241.58163pt.
-
-
-LaTeX Warning: Reference `fig:complex_gaussian_xt' on page 13 undefined on input line 417.
-
-[13 <./images/entangled_wavefunction_2d_polar_probability_density_with_phase.png> <./images/entangled_wavefunction_3d_polar_probability_density_with_phase.png>]
-
-LaTeX Warning: Reference `fig:complex_gaussian_xt' on page 14 undefined on input line 420.
-
-
-Overfull \hbox (4.29819pt too wide) in paragraph at lines 423--424
-[]\OT1/cmr/m/n/12 The wave-func-tion evolves sym-met-ri-cally, main-tain-ing co-her-ence across an-gu-lar slices. 
- []
-
-<images/complex_gaussian_wavefunction_probability_density_with_phase.png, id=147, 722.7pt x 433.62pt>
-File: images/complex_gaussian_wavefunction_probability_density_with_phase.png Graphic file (type png)
-<use images/complex_gaussian_wavefunction_probability_density_with_phase.png>
-Package pdftex.def Info: images/complex_gaussian_wavefunction_probability_density_with_phase.png  used on input line 429.
-(pdftex.def)             Requested size: 362.37569pt x 217.4248pt.
-
-LaTeX Warning: Reference `fig:complex_gaussian_2d_polar' on page 14 undefined on input line 435.
-
-<images/complex_gaussian_wavefunction_2d_polar_probability_density_with_phase.png, id=148, 867.24pt x 578.16pt>
-File: images/complex_gaussian_wavefunction_2d_polar_probability_density_with_phase.png Graphic file (type png)
-<use images/complex_gaussian_wavefunction_2d_polar_probability_density_with_phase.png>
-Package pdftex.def Info: images/complex_gaussian_wavefunction_2d_polar_probability_density_with_phase.png  used on input line 444.
-(pdftex.def)             Requested size: 362.37569pt x 241.58163pt.
-[14 <./images/complex_gaussian_wavefunction_probability_density_with_phase.png>]
-
-LaTeX Warning: Reference `fig:complex_gaussian_3d_polar' on page 15 undefined on input line 450.
-
-<images/complex_gaussian_wavefunction_3d_polar_probability_density_with_phase.png, id=157, 867.24pt x 578.16pt>
-File: images/complex_gaussian_wavefunction_3d_polar_probability_density_with_phase.png Graphic file (type png)
-<use images/complex_gaussian_wavefunction_3d_polar_probability_density_with_phase.png>
-Package pdftex.def Info: images/complex_gaussian_wavefunction_3d_polar_probability_density_with_phase.png  used on input line 459.
-(pdftex.def)             Requested size: 362.37569pt x 241.58163pt.
-[15 <./images/complex_gaussian_wavefunction_2d_polar_probability_density_with_phase.png>]
-
-LaTeX Warning: Reference `fig:tunneling_density' on page 16 undefined on input line 473.
-
-
-LaTeX Warning: Reference `fig:tunneling_2d_polar' on page 16 undefined on input line 475.
-
-
-LaTeX Warning: Reference `fig:tunneling_3d_polar' on page 16 undefined on input line 475.
-
-<images/tunneling_wavefunction_probability_density_with_phase.png, id=165, 722.7pt x 433.62pt>
-File: images/tunneling_wavefunction_probability_density_with_phase.png Graphic file (type png)
-<use images/tunneling_wavefunction_probability_density_with_phase.png>
-Package pdftex.def Info: images/tunneling_wavefunction_probability_density_with_phase.png  used on input line 479.
-(pdftex.def)             Requested size: 362.37569pt x 217.4248pt.
-[16 <./images/complex_gaussian_wavefunction_3d_polar_probability_density_with_phase.png>]
-<images/tunneling_wavefunction_2d_polar_probability_density_with_phase.png, id=176, 867.24pt x 578.16pt>
-File: images/tunneling_wavefunction_2d_polar_probability_density_with_phase.png Graphic file (type png)
-<use images/tunneling_wavefunction_2d_polar_probability_density_with_phase.png>
-Package pdftex.def Info: images/tunneling_wavefunction_2d_polar_probability_density_with_phase.png  used on input line 486.
-(pdftex.def)             Requested size: 362.37569pt x 241.58163pt.
-<images/tunneling_wavefunction_3d_polar_probability_density_with_phase.png, id=177, 867.24pt x 578.16pt>
-File: images/tunneling_wavefunction_3d_polar_probability_density_with_phase.png Graphic file (type png)
-<use images/tunneling_wavefunction_3d_polar_probability_density_with_phase.png>
-Package pdftex.def Info: images/tunneling_wavefunction_3d_polar_probability_density_with_phase.png  used on input line 493.
-(pdftex.def)             Requested size: 362.37569pt x 241.58163pt.
- [17 <./images/tunneling_wavefunction_probability_density_with_phase.png> <./images/tunneling_wavefunction_2d_polar_probability_density_with_phase.png>]
-
-LaTeX Warning: Reference `fig:scattering_density' on page 18 undefined on input line 500.
-
-
-LaTeX Warning: Reference `fig:scattering_2d_polar' on page 18 undefined on input line 502.
-
-
-LaTeX Warning: Reference `fig:scattering_3d_polar' on page 18 undefined on input line 502.
-
-<images/scattering_wavefunction_probability_density_with_phase.png, id=186, 722.7pt x 433.62pt>
-File: images/scattering_wavefunction_probability_density_with_phase.png Graphic file (type png)
-<use images/scattering_wavefunction_probability_density_with_phase.png>
-Package pdftex.def Info: images/scattering_wavefunction_probability_density_with_phase.png  used on input line 506.
-(pdftex.def)             Requested size: 362.37569pt x 217.4248pt.
-[18 <./images/tunneling_wavefunction_3d_polar_probability_density_with_phase.png>]
-<images/scattering_wavefunction_2d_polar_probability_density_with_phase.png, id=194, 867.24pt x 578.16pt>
-File: images/scattering_wavefunction_2d_polar_probability_density_with_phase.png Graphic file (type png)
-<use images/scattering_wavefunction_2d_polar_probability_density_with_phase.png>
-Package pdftex.def Info: images/scattering_wavefunction_2d_polar_probability_density_with_phase.png  used on input line 513.
-(pdftex.def)             Requested size: 362.37569pt x 241.58163pt.
-<images/scattering_wavefunction_3d_polar_probability_density_with_phase.png, id=195, 867.24pt x 578.16pt>
-File: images/scattering_wavefunction_3d_polar_probability_density_with_phase.png Graphic file (type png)
-<use images/scattering_wavefunction_3d_polar_probability_density_with_phase.png>
-Package pdftex.def Info: images/scattering_wavefunction_3d_polar_probability_density_with_phase.png  used on input line 520.
-(pdftex.def)             Requested size: 362.37569pt x 241.58163pt.
- [19 <./images/scattering_wavefunction_probability_density_with_phase.png> <./images/scattering_wavefunction_2d_polar_probability_density_with_phase.png>]
-
-LaTeX Warning: Reference `fig:energy_conservation' on page 20 undefined on input line 530.
-
-<images/energy_conservation_gaussian.png, id=205, 578.16pt x 361.35pt>
-File: images/energy_conservation_gaussian.png Graphic file (type png)
-<use images/energy_conservation_gaussian.png>
-Package pdftex.def Info: images/energy_conservation_gaussian.png  used on input line 536.
-(pdftex.def)             Requested size: 217.42265pt x 135.88637pt.
-<images/energy_conservation_superposition.png, id=206, 578.16pt x 361.35pt>
-File: images/energy_conservation_superposition.png Graphic file (type png)
-<use images/energy_conservation_superposition.png>
-Package pdftex.def Info: images/energy_conservation_superposition.png  used on input line 537.
-(pdftex.def)             Requested size: 217.42265pt x 135.88637pt.
-<images/energy_conservation_entangled.png, id=207, 578.16pt x 361.35pt>
-File: images/energy_conservation_entangled.png Graphic file (type png)
-<use images/energy_conservation_entangled.png>
-Package pdftex.def Info: images/energy_conservation_entangled.png  used on input line 538.
-(pdftex.def)             Requested size: 217.42265pt x 135.88637pt.
-<images/energy_conservation_complex_gaussian.png, id=208, 578.16pt x 361.35pt>
-File: images/energy_conservation_complex_gaussian.png Graphic file (type png)
-<use images/energy_conservation_complex_gaussian.png>
-Package pdftex.def Info: images/energy_conservation_complex_gaussian.png  used on input line 539.
-(pdftex.def)             Requested size: 217.42265pt x 135.88637pt.
-<images/energy_conservation_tunneling.png, id=209, 578.16pt x 361.35pt>
-File: images/energy_conservation_tunneling.png Graphic file (type png)
-<use images/energy_conservation_tunneling.png>
-Package pdftex.def Info: images/energy_conservation_tunneling.png  used on input line 540.
-(pdftex.def)             Requested size: 217.42265pt x 135.88637pt.
-<images/energy_conservation_scattering.png, id=210, 578.16pt x 361.35pt>
-File: images/energy_conservation_scattering.png Graphic file (type png)
-<use images/energy_conservation_scattering.png>
-Package pdftex.def Info: images/energy_conservation_scattering.png  used on input line 541.
-(pdftex.def)             Requested size: 217.42265pt x 135.88637pt.
-[20 <./images/scattering_wavefunction_3d_polar_probability_density_with_phase.png>] [21 <./images/energy_conservation_gaussian.png> <./images/energy_conservation_superposition.png> <./images/energy_conservation_entangled.png> <./images/energy_conservation_complex_gaussian.png> <./images/energy_conservation_tunneling.png> <./images/energy_conservation_scattering.png>]
-
-LaTeX Warning: Citation `einstein1905' on page 22 undefined on input line 554.
-
-[22]
-
-LaTeX Warning: Reference `tab:benchmark_ripple' on page 23 undefined on input line 580.
-
-
-Overfull \hbox (9.7215pt too wide) in paragraph at lines 605--605
-[]\OT1/cmr/bx/n/14.4 External Bench-mark-ing: Com-par-i-son with Tra-di-tional Meth-
- []
-
-
-LaTeX Warning: Reference `tab:benchmark_methods' on page 23 undefined on input line 607.
-
-[23]
-Overfull \hbox (399.72917pt too wide) in paragraph at lines 634--645
+ [3{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [4]
+Overfull \hbox (11.0577pt too wide) in paragraph at lines 143--153
  [][] 
  []
 
-[24]
-Overfull \hbox (0.76984pt too wide) in paragraph at lines 666--666
+[5]
+
+LaTeX Warning: Reference `sec:experiments' on page 6 undefined on input line 182.
+
+
+LaTeX Warning: Reference `sec:applications' on page 6 undefined on input line 184.
+
+
+LaTeX Warning: Reference `sec:conclusion' on page 6 undefined on input line 185.
+
+(./ripples_in_spacetime.toc)
+\tf@toc=\write6
+\openout6 = `ripples_in_spacetime.toc'.
+
+ [6] [7] [8]
+<images/single_wavefunction_with_phase.png, id=402, 722.7pt x 433.62pt>
+File: images/single_wavefunction_with_phase.png Graphic file (type png)
+<use images/single_wavefunction_with_phase.png>
+Package pdftex.def Info: images/single_wavefunction_with_phase.png  used on input line 301.
+(pdftex.def)             Requested size: 362.37569pt x 217.4248pt.
+<images/single_wavefunction_probability_density_with_phase.png, id=404, 722.7pt x 433.62pt>
+File: images/single_wavefunction_probability_density_with_phase.png Graphic file (type png)
+<use images/single_wavefunction_probability_density_with_phase.png>
+Package pdftex.def Info: images/single_wavefunction_probability_density_with_phase.png  used on input line 308.
+(pdftex.def)             Requested size: 362.37569pt x 217.4248pt.
+ [9 <./images/single_wavefunction_with_phase.png>]
+<images/single_wavefunction_2d_polar_with_phase.png, id=415, 867.24pt x 578.16pt>
+File: images/single_wavefunction_2d_polar_with_phase.png Graphic file (type png)
+<use images/single_wavefunction_2d_polar_with_phase.png>
+Package pdftex.def Info: images/single_wavefunction_2d_polar_with_phase.png  used on input line 315.
+(pdftex.def)             Requested size: 362.37569pt x 241.58163pt.
+<images/single_wavefunction_2d_polar_probability_density_with_phase.png, id=416, 867.24pt x 578.16pt>
+File: images/single_wavefunction_2d_polar_probability_density_with_phase.png Graphic file (type png)
+<use images/single_wavefunction_2d_polar_probability_density_with_phase.png>
+Package pdftex.def Info: images/single_wavefunction_2d_polar_probability_density_with_phase.png  used on input line 322.
+(pdftex.def)             Requested size: 362.37569pt x 241.58163pt.
+ [10 <./images/single_wavefunction_probability_density_with_phase.png> <./images/single_wavefunction_2d_polar_with_phase.png>]
+<images/single_wavefunction_3d_polar_with_phase.png, id=423, 867.24pt x 578.16pt>
+File: images/single_wavefunction_3d_polar_with_phase.png Graphic file (type png)
+<use images/single_wavefunction_3d_polar_with_phase.png>
+Package pdftex.def Info: images/single_wavefunction_3d_polar_with_phase.png  used on input line 329.
+(pdftex.def)             Requested size: 362.37569pt x 241.58163pt.
+<images/single_wavefunction_3d_polar_probability_density_with_phase.png, id=424, 867.24pt x 578.16pt>
+File: images/single_wavefunction_3d_polar_probability_density_with_phase.png Graphic file (type png)
+<use images/single_wavefunction_3d_polar_probability_density_with_phase.png>
+Package pdftex.def Info: images/single_wavefunction_3d_polar_probability_density_with_phase.png  used on input line 336.
+(pdftex.def)             Requested size: 362.37569pt x 241.58163pt.
+ [11 <./images/single_wavefunction_2d_polar_probability_density_with_phase.png> <./images/single_wavefunction_3d_polar_with_phase.png>] [12 <./images/single_wavefunction_3d_polar_probability_density_with_phase.png>]
+
+LaTeX Warning: Reference `fig:superposition_3d' on page 13 undefined on input line 364.
+
+<images/superposition_wavefunction_probability_density_with_phase.png, id=445, 722.7pt x 433.62pt>
+File: images/superposition_wavefunction_probability_density_with_phase.png Graphic file (type png)
+<use images/superposition_wavefunction_probability_density_with_phase.png>
+Package pdftex.def Info: images/superposition_wavefunction_probability_density_with_phase.png  used on input line 373.
+(pdftex.def)             Requested size: 362.37569pt x 217.4248pt.
+<images/superposition_wavefunction_2d_polar_probability_density_with_phase.png, id=446, 867.24pt x 578.16pt>
+File: images/superposition_wavefunction_2d_polar_probability_density_with_phase.png Graphic file (type png)
+<use images/superposition_wavefunction_2d_polar_probability_density_with_phase.png>
+Package pdftex.def Info: images/superposition_wavefunction_2d_polar_probability_density_with_phase.png  used on input line 380.
+(pdftex.def)             Requested size: 362.37569pt x 241.58163pt.
+[13 <./images/superposition_wavefunction_probability_density_with_phase.png>]
+<images/superposition_wavefunction_3d_polar_probability_density_with_phase.png, id=455, 867.24pt x 578.16pt>
+File: images/superposition_wavefunction_3d_polar_probability_density_with_phase.png Graphic file (type png)
+<use images/superposition_wavefunction_3d_polar_probability_density_with_phase.png>
+Package pdftex.def Info: images/superposition_wavefunction_3d_polar_probability_density_with_phase.png  used on input line 387.
+(pdftex.def)             Requested size: 362.37569pt x 241.58163pt.
+ [14 <./images/superposition_wavefunction_2d_polar_probability_density_with_phase.png> <./images/superposition_wavefunction_3d_polar_probability_density_with_phase.png>]
+<images/entangled_wavefunction_probability_density_with_phase.png, id=469, 722.7pt x 433.62pt>
+File: images/entangled_wavefunction_probability_density_with_phase.png Graphic file (type png)
+<use images/entangled_wavefunction_probability_density_with_phase.png>
+Package pdftex.def Info: images/entangled_wavefunction_probability_density_with_phase.png  used on input line 420.
+(pdftex.def)             Requested size: 362.37569pt x 217.4248pt.
+ [15]
+<images/entangled_wavefunction_2d_polar_probability_density_with_phase.png, id=481, 867.24pt x 578.16pt>
+File: images/entangled_wavefunction_2d_polar_probability_density_with_phase.png Graphic file (type png)
+<use images/entangled_wavefunction_2d_polar_probability_density_with_phase.png>
+Package pdftex.def Info: images/entangled_wavefunction_2d_polar_probability_density_with_phase.png  used on input line 427.
+(pdftex.def)             Requested size: 362.37569pt x 241.58163pt.
+<images/entangled_wavefunction_3d_polar_probability_density_with_phase.png, id=482, 867.24pt x 578.16pt>
+File: images/entangled_wavefunction_3d_polar_probability_density_with_phase.png Graphic file (type png)
+<use images/entangled_wavefunction_3d_polar_probability_density_with_phase.png>
+Package pdftex.def Info: images/entangled_wavefunction_3d_polar_probability_density_with_phase.png  used on input line 434.
+(pdftex.def)             Requested size: 362.37569pt x 241.58163pt.
+ [16 <./images/entangled_wavefunction_probability_density_with_phase.png> <./images/entangled_wavefunction_2d_polar_probability_density_with_phase.png>]
+Overfull \hbox (4.29819pt too wide) in paragraph at lines 446--447
+[]\OT1/cmr/m/n/12 The wave-func-tion evolves sym-met-ri-cally, main-tain-ing co-her-ence across an-gu-lar slices. 
+ []
+
+<images/complex_gaussian_wavefunction_probability_density_with_phase.png, id=491, 722.7pt x 433.62pt>
+File: images/complex_gaussian_wavefunction_probability_density_with_phase.png Graphic file (type png)
+<use images/complex_gaussian_wavefunction_probability_density_with_phase.png>
+Package pdftex.def Info: images/complex_gaussian_wavefunction_probability_density_with_phase.png  used on input line 452.
+(pdftex.def)             Requested size: 362.37569pt x 217.4248pt.
+[17 <./images/entangled_wavefunction_3d_polar_probability_density_with_phase.png>]
+<images/complex_gaussian_wavefunction_2d_polar_probability_density_with_phase.png, id=500, 867.24pt x 578.16pt>
+File: images/complex_gaussian_wavefunction_2d_polar_probability_density_with_phase.png Graphic file (type png)
+<use images/complex_gaussian_wavefunction_2d_polar_probability_density_with_phase.png>
+Package pdftex.def Info: images/complex_gaussian_wavefunction_2d_polar_probability_density_with_phase.png  used on input line 467.
+(pdftex.def)             Requested size: 362.37569pt x 241.58163pt.
+ [18 <./images/complex_gaussian_wavefunction_probability_density_with_phase.png>]
+<images/complex_gaussian_wavefunction_3d_polar_probability_density_with_phase.png, id=509, 867.24pt x 578.16pt>
+File: images/complex_gaussian_wavefunction_3d_polar_probability_density_with_phase.png Graphic file (type png)
+<use images/complex_gaussian_wavefunction_3d_polar_probability_density_with_phase.png>
+Package pdftex.def Info: images/complex_gaussian_wavefunction_3d_polar_probability_density_with_phase.png  used on input line 482.
+(pdftex.def)             Requested size: 362.37569pt x 241.58163pt.
+ [19 <./images/complex_gaussian_wavefunction_2d_polar_probability_density_with_phase.png>]
+<images/tunneling_wavefunction_probability_density_with_phase.png, id=521, 722.7pt x 433.62pt>
+File: images/tunneling_wavefunction_probability_density_with_phase.png Graphic file (type png)
+<use images/tunneling_wavefunction_probability_density_with_phase.png>
+Package pdftex.def Info: images/tunneling_wavefunction_probability_density_with_phase.png  used on input line 502.
+(pdftex.def)             Requested size: 362.37569pt x 217.4248pt.
+ [20 <./images/complex_gaussian_wavefunction_3d_polar_probability_density_with_phase.png>]
+<images/tunneling_wavefunction_2d_polar_probability_density_with_phase.png, id=530, 867.24pt x 578.16pt>
+File: images/tunneling_wavefunction_2d_polar_probability_density_with_phase.png Graphic file (type png)
+<use images/tunneling_wavefunction_2d_polar_probability_density_with_phase.png>
+Package pdftex.def Info: images/tunneling_wavefunction_2d_polar_probability_density_with_phase.png  used on input line 509.
+(pdftex.def)             Requested size: 362.37569pt x 241.58163pt.
+<images/tunneling_wavefunction_3d_polar_probability_density_with_phase.png, id=531, 867.24pt x 578.16pt>
+File: images/tunneling_wavefunction_3d_polar_probability_density_with_phase.png Graphic file (type png)
+<use images/tunneling_wavefunction_3d_polar_probability_density_with_phase.png>
+Package pdftex.def Info: images/tunneling_wavefunction_3d_polar_probability_density_with_phase.png  used on input line 516.
+(pdftex.def)             Requested size: 362.37569pt x 241.58163pt.
+ [21 <./images/tunneling_wavefunction_probability_density_with_phase.png> <./images/tunneling_wavefunction_2d_polar_probability_density_with_phase.png>]
+<images/scattering_wavefunction_probability_density_with_phase.png, id=541, 722.7pt x 433.62pt>
+File: images/scattering_wavefunction_probability_density_with_phase.png Graphic file (type png)
+<use images/scattering_wavefunction_probability_density_with_phase.png>
+Package pdftex.def Info: images/scattering_wavefunction_probability_density_with_phase.png  used on input line 529.
+(pdftex.def)             Requested size: 362.37569pt x 217.4248pt.
+ [22 <./images/tunneling_wavefunction_3d_polar_probability_density_with_phase.png>]
+<images/scattering_wavefunction_2d_polar_probability_density_with_phase.png, id=550, 867.24pt x 578.16pt>
+File: images/scattering_wavefunction_2d_polar_probability_density_with_phase.png Graphic file (type png)
+<use images/scattering_wavefunction_2d_polar_probability_density_with_phase.png>
+Package pdftex.def Info: images/scattering_wavefunction_2d_polar_probability_density_with_phase.png  used on input line 536.
+(pdftex.def)             Requested size: 362.37569pt x 241.58163pt.
+<images/scattering_wavefunction_3d_polar_probability_density_with_phase.png, id=551, 867.24pt x 578.16pt>
+File: images/scattering_wavefunction_3d_polar_probability_density_with_phase.png Graphic file (type png)
+<use images/scattering_wavefunction_3d_polar_probability_density_with_phase.png>
+Package pdftex.def Info: images/scattering_wavefunction_3d_polar_probability_density_with_phase.png  used on input line 543.
+(pdftex.def)             Requested size: 362.37569pt x 241.58163pt.
+ [23 <./images/scattering_wavefunction_probability_density_with_phase.png> <./images/scattering_wavefunction_2d_polar_probability_density_with_phase.png>]
+<images/energy_conservation_gaussian.png, id=559, 578.16pt x 361.35pt>
+File: images/energy_conservation_gaussian.png Graphic file (type png)
+<use images/energy_conservation_gaussian.png>
+Package pdftex.def Info: images/energy_conservation_gaussian.png  used on input line 559.
+(pdftex.def)             Requested size: 217.42265pt x 135.88637pt.
+<images/energy_conservation_superposition.png, id=560, 578.16pt x 361.35pt>
+File: images/energy_conservation_superposition.png Graphic file (type png)
+<use images/energy_conservation_superposition.png>
+Package pdftex.def Info: images/energy_conservation_superposition.png  used on input line 560.
+(pdftex.def)             Requested size: 217.42265pt x 135.88637pt.
+<images/energy_conservation_entangled.png, id=561, 578.16pt x 361.35pt>
+File: images/energy_conservation_entangled.png Graphic file (type png)
+<use images/energy_conservation_entangled.png>
+Package pdftex.def Info: images/energy_conservation_entangled.png  used on input line 561.
+(pdftex.def)             Requested size: 217.42265pt x 135.88637pt.
+<images/energy_conservation_complex_gaussian.png, id=562, 578.16pt x 361.35pt>
+File: images/energy_conservation_complex_gaussian.png Graphic file (type png)
+<use images/energy_conservation_complex_gaussian.png>
+Package pdftex.def Info: images/energy_conservation_complex_gaussian.png  used on input line 562.
+(pdftex.def)             Requested size: 217.42265pt x 135.88637pt.
+<images/energy_conservation_tunneling.png, id=563, 578.16pt x 361.35pt>
+File: images/energy_conservation_tunneling.png Graphic file (type png)
+<use images/energy_conservation_tunneling.png>
+Package pdftex.def Info: images/energy_conservation_tunneling.png  used on input line 563.
+(pdftex.def)             Requested size: 217.42265pt x 135.88637pt.
+<images/energy_conservation_scattering.png, id=564, 578.16pt x 361.35pt>
+File: images/energy_conservation_scattering.png Graphic file (type png)
+<use images/energy_conservation_scattering.png>
+Package pdftex.def Info: images/energy_conservation_scattering.png  used on input line 564.
+(pdftex.def)             Requested size: 217.42265pt x 135.88637pt.
+ [24 <./images/scattering_wavefunction_3d_polar_probability_density_with_phase.png>] [25 <./images/energy_conservation_gaussian.png> <./images/energy_conservation_superposition.png> <./images/energy_conservation_entangled.png> <./images/energy_conservation_complex_gaussian.png> <./images/energy_conservation_tunneling.png> <./images/energy_conservation_scattering.png>]
+
+LaTeX Warning: Citation `einstein1905' on page 26 undefined on input line 577.
+
+[26]
+Overfull \hbox (9.7215pt too wide) in paragraph at lines 628--628
+[]\OT1/cmr/bx/n/14.4 External Bench-mark-ing: Com-par-i-son with Tra-di-tional Meth-
+ []
+
+[27]
+Overfull \hbox (399.72917pt too wide) in paragraph at lines 657--668
+ [][] 
+ []
+
+[28]
+Overfull \hbox (0.76984pt too wide) in paragraph at lines 689--689
 []\OT1/cmr/bx/n/17.28 Informative Po-ten-tial and The-o-ret-i-cal Im-pli-ca-tions 
  []
 
 
-Overfull \hbox (0.70505pt too wide) in paragraph at lines 682--683
+Overfull \hbox (0.70505pt too wide) in paragraph at lines 705--706
 []\OT1/cmr/bx/n/12 Eye-Tracking Stud-ies: \OT1/cmr/m/n/12 An-a-lyze vi-sual at-ten-tion pat-terns to de-ter-mine which
  []
 
-[25] [26]
-Overfull \hbox (70.59213pt too wide) in paragraph at lines 734--735
+[29] [30]
+Overfull \hbox (70.59213pt too wide) in paragraph at lines 757--758
 \OT1/cmr/m/n/12 The ripple-based vi-su-al-iza-tion tool is avail-able at []$\OT1/cmtt/m/n/12 https : / / github . com / shef4 / space-[]time-[]geometry$[]\OT1/cmr/m/n/12 .
  []
 
-[27]
-Overfull \hbox (1.12366pt too wide) in paragraph at lines 770--772
+[31]
+Overfull \hbox (1.12366pt too wide) in paragraph at lines 794--796
 []\OT1/cmr/bx/n/12 Mapping to Po-lar Co-or-di-nates: \OT1/cmr/m/n/12 Ex-tend the trans-for-ma-tion to map each $	[](\OML/cmm/m/it/12 x; t\OT1/cmr/m/n/12 )$
  []
 
-[28]
-
-LaTeX Warning: Reference `appendix:A' on page 29 undefined on input line 778.
-
-
-Overfull \hbox (4.42223pt too wide) in paragraph at lines 792--794
+[32]
+Overfull \hbox (4.42223pt too wide) in paragraph at lines 816--818
 \OT1/cmr/m/n/12 each branch's wave-func-tion $	[](\OML/cmm/m/it/12 x; t\OT1/cmr/m/n/12 )$ to its cor-re-spond-ing an-gu-lar sec-tor $[](\OML/cmm/m/it/12 r; ^^R\OT1/cmr/m/n/12 )$: 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[29] [30]
-Overfull \hbox (49.63736pt too wide) detected at line 881
+[33] [34]
+Overfull \hbox (49.63736pt too wide) detected at line 911
 []
  []
 
-[31] [32]
-
-LaTeX Warning: Reference `appendix:A' on page 33 undefined on input line 948.
-
-[33]
-
-LaTeX Warning: Reference `appendix:A' on page 34 undefined on input line 1028.
-
-[34] [35]
-Overfull \hbox (1.23012pt too wide) in paragraph at lines 1095--1096
+[35] [36] [37] [38] [39]
+Overfull \hbox (1.23012pt too wide) in paragraph at lines 1142--1144
 \OT1/cmr/m/n/12 branches are pre-served and ac-cu-rately rep-re-sented through hue en-cod-ing, main-
  []
 
 
-LaTeX Warning: Reference `appendix:A' on page 36 undefined on input line 1109.
-
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1116: Package pgf Error: No shape named `(2-1' is known.
-
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1116 ...ing{2}{6}{3cm}{exp(-100*(x-0.5)^2)}{red}
-                                                  
-This error message was generated by an \errmessage
-command, so I can't give any explicit help.
-Pretend that you're Hercule Poirot: Examine all clues,
-and deduce the truth by order and method.
-
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1116: Package pgf Error: No shape named `(2-1' is known.
-
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1116 ...ing{2}{6}{3cm}{exp(-100*(x-0.5)^2)}{red}
-                                                  
-(That was another \errmessage.)
-
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1116: Package tikz Error: Giving up on this path. Did you forget a semicolon?.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1116 ...ing{2}{6}{3cm}{exp(-100*(x-0.5)^2)}{red}
-                                                  
-(That was another \errmessage.)
-
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1116: Package pgf Error: No shape named `(2-1' is known.
-
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1116 ...ing{2}{6}{3cm}{exp(-100*(x-0.5)^2)}{red}
-                                                  
-(That was another \errmessage.)
-
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1116: Package tikz Error: Giving up on this path. Did you forget a semicolon?.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1116 ...ing{2}{6}{3cm}{exp(-100*(x-0.5)^2)}{red}
-                                                  
-(That was another \errmessage.)
-
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1116: Package pgf Error: No shape named `(2-1' is known.
-
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1116 ...ing{2}{6}{3cm}{exp(-100*(x-0.5)^2)}{red}
-                                                  
-(That was another \errmessage.)
-
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1116: Package tikz Error: Giving up on this path. Did you forget a semicolon?.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1116 ...ing{2}{6}{3cm}{exp(-100*(x-0.5)^2)}{red}
-                                                  
-(That was another \errmessage.)
-
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1116: Package pgf Error: No shape named `(2-0' is known.
-
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1116 ...ing{2}{6}{3cm}{exp(-100*(x-0.5)^2)}{red}
-                                                  
-(That was another \errmessage.)
-
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1116: Package tikz Error: A node must have a (possibly empty) label text.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1116 ...ing{2}{6}{3cm}{exp(-100*(x-0.5)^2)}{red}
-                                                  
-(That was another \errmessage.)
-
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1116: Package tikz Error: Giving up on this path. Did you forget a semicolon?.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1116 ...ing{2}{6}{3cm}{exp(-100*(x-0.5)^2)}{red}
-                                                  
-(That was another \errmessage.)
-
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no + in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no B in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no ; in font nullfont!
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1126: Package pgf Error: No shape named `(3-1' is known.
-
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1126 ...ionMapping{3}{6}{3cm}{exp(-10*x)}{green}
-                                                  
-(That was another \errmessage.)
-
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1126: Package pgf Error: No shape named `(3-1' is known.
-
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1126 ...ionMapping{3}{6}{3cm}{exp(-10*x)}{green}
-                                                  
-(That was another \errmessage.)
-
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1126: Package tikz Error: Giving up on this path. Did you forget a semicolon?.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1126 ...ionMapping{3}{6}{3cm}{exp(-10*x)}{green}
-                                                  
-(That was another \errmessage.)
-
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1126: Package pgf Error: No shape named `(3-1' is known.
-
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1126 ...ionMapping{3}{6}{3cm}{exp(-10*x)}{green}
-                                                  
-(That was another \errmessage.)
-
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1126: Package tikz Error: Giving up on this path. Did you forget a semicolon?.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1126 ...ionMapping{3}{6}{3cm}{exp(-10*x)}{green}
-                                                  
-(That was another \errmessage.)
-
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1126: Package pgf Error: No shape named `(3-1' is known.
-
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1126 ...ionMapping{3}{6}{3cm}{exp(-10*x)}{green}
-                                                  
-(That was another \errmessage.)
-
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1126: Package tikz Error: Giving up on this path. Did you forget a semicolon?.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1126 ...ionMapping{3}{6}{3cm}{exp(-10*x)}{green}
-                                                  
-(That was another \errmessage.)
-
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1126: Package pgf Error: No shape named `(3-0' is known.
-
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1126 ...ionMapping{3}{6}{3cm}{exp(-10*x)}{green}
-                                                  
-(That was another \errmessage.)
-
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1126: Package tikz Error: A node must have a (possibly empty) label text.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1126 ...ionMapping{3}{6}{3cm}{exp(-10*x)}{green}
-                                                  
-(That was another \errmessage.)
-
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1126: Package tikz Error: Giving up on this path. Did you forget a semicolon?.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1126 ...ionMapping{3}{6}{3cm}{exp(-10*x)}{green}
-                                                  
-(That was another \errmessage.)
-
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no + in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no B in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no ; in font nullfont!
-[36]
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1136: Package pgf Error: No shape named `(4-1' is known.
-
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1136 ...sin(deg(360*x/\angleWidth)) + 0.5}{blue}
-                                                  
-(That was another \errmessage.)
-
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1136: Package pgf Error: No shape named `(4-1' is known.
-
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1136 ...sin(deg(360*x/\angleWidth)) + 0.5}{blue}
-                                                  
-(That was another \errmessage.)
-
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1136: Package tikz Error: Giving up on this path. Did you forget a semicolon?.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1136 ...sin(deg(360*x/\angleWidth)) + 0.5}{blue}
-                                                  
-(That was another \errmessage.)
-
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1136: Package pgf Error: No shape named `(4-1' is known.
-
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1136 ...sin(deg(360*x/\angleWidth)) + 0.5}{blue}
-                                                  
-(That was another \errmessage.)
-
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1136: Package tikz Error: Giving up on this path. Did you forget a semicolon?.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1136 ...sin(deg(360*x/\angleWidth)) + 0.5}{blue}
-                                                  
-(That was another \errmessage.)
-
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1136: Package pgf Error: No shape named `(4-1' is known.
-
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1136 ...sin(deg(360*x/\angleWidth)) + 0.5}{blue}
-                                                  
-(That was another \errmessage.)
-
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1136: Package tikz Error: Giving up on this path. Did you forget a semicolon?.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1136 ...sin(deg(360*x/\angleWidth)) + 0.5}{blue}
-                                                  
-(That was another \errmessage.)
-
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1136: Package pgf Error: No shape named `(4-0' is known.
-
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1136 ...sin(deg(360*x/\angleWidth)) + 0.5}{blue}
-                                                  
-(That was another \errmessage.)
-
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1136: Package tikz Error: A node must have a (possibly empty) label text.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1136 ...sin(deg(360*x/\angleWidth)) + 0.5}{blue}
-                                                  
-(That was another \errmessage.)
-
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1136: Package tikz Error: Giving up on this path. Did you forget a semicolon?.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1136 ...sin(deg(360*x/\angleWidth)) + 0.5}{blue}
-                                                  
-(That was another \errmessage.)
-
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no + in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no B in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1146: Package pgf Error: No shape named `(5-1' is known.
-
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1146 ...ping{5}{6}{3cm}{sin(deg(720*x))}{purple}
-                                                  
-(That was another \errmessage.)
-
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1146: Package pgf Error: No shape named `(5-1' is known.
-
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1146 ...ping{5}{6}{3cm}{sin(deg(720*x))}{purple}
-                                                  
-(That was another \errmessage.)
-
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1146: Package tikz Error: Giving up on this path. Did you forget a semicolon?.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1146 ...ping{5}{6}{3cm}{sin(deg(720*x))}{purple}
-                                                  
-(That was another \errmessage.)
-
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1146: Package pgf Error: No shape named `(5-1' is known.
-
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1146 ...ping{5}{6}{3cm}{sin(deg(720*x))}{purple}
-                                                  
-(That was another \errmessage.)
-
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1146: Package tikz Error: Giving up on this path. Did you forget a semicolon?.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1146 ...ping{5}{6}{3cm}{sin(deg(720*x))}{purple}
-                                                  
-(That was another \errmessage.)
-
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1146: Package pgf Error: No shape named `(5-1' is known.
-
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1146 ...ping{5}{6}{3cm}{sin(deg(720*x))}{purple}
-                                                  
-(That was another \errmessage.)
-
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1146: Package tikz Error: Giving up on this path. Did you forget a semicolon?.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1146 ...ping{5}{6}{3cm}{sin(deg(720*x))}{purple}
-                                                  
-(That was another \errmessage.)
-
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1146: Package pgf Error: No shape named `(5-0' is known.
-
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1146 ...ping{5}{6}{3cm}{sin(deg(720*x))}{purple}
-                                                  
-(That was another \errmessage.)
-
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1146: Package tikz Error: A node must have a (possibly empty) label text.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1146 ...ping{5}{6}{3cm}{sin(deg(720*x))}{purple}
-                                                  
-(That was another \errmessage.)
-
-
-/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex:1146: Package tikz Error: Giving up on this path. Did you forget a semicolon?.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1146 ...ping{5}{6}{3cm}{sin(deg(720*x))}{purple}
-                                                  
-(That was another \errmessage.)
-
-Missing character: There is no * in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 6 in font nullfont!
-Missing character: There is no : in font nullfont!
-Missing character: There is no 3 in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no + in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no B in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no ; in font nullfont!
-[37] [38] (./ripples_in_spacetime.aux)
+[40] [41] (./ripples_in_spacetime.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -2518,30 +924,24 @@ L3 programming layer <2024-02-20>
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `ripples_in_spacetime.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `ripples_in_spacetime.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  99965CC10591F3DA20CC6DD434A17247;12672.
+Package rerunfilecheck Info: File `ripples_in_spacetime.out' has not changed.
+(rerunfilecheck)             Checksum: 3B9BB64E93FC0AF0009D455E06403305;13061.
  ) 
 Here is how much of TeX's memory you used:
- 35425 strings out of 474116
- 848037 string characters out of 5743681
- 1941187 words of memory out of 5000000
- 57055 multiletter control sequences out of 15000+600000
- 569541 words of font info for 80 fonts, out of 8000000 for 9000
+ 35145 strings out of 474116
+ 838618 string characters out of 5743681
+ 1944187 words of memory out of 5000000
+ 56746 multiletter control sequences out of 15000+600000
+ 570231 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,11n,107p,1486b,2155s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on ripples_in_spacetime.pdf (38 pages, 5927507 bytes).
+ 102i,11n,107p,1490b,990s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on ripples_in_spacetime.pdf (41 pages, 5947753 bytes).
 PDF statistics:
- 526 PDF objects out of 1000 (max. 8388607)
- 390 compressed objects within 4 object streams
- 198 named destinations out of 1000 (max. 500000)
- 148 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 852 PDF objects out of 1000 (max. 8388607)
+ 707 compressed objects within 8 object streams
+ 205 named destinations out of 1000 (max. 500000)
+ 636 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -14,10 +14,14 @@
 \usepackage{float}
 \usepackage{xcolor}
 \usepackage{tikz}
+\usepackage{pifont}
+
+
+
 % TikZ Libraries
 \usetikzlibrary{patterns, angles, quotes, calc, shapes, decorations.pathreplacing, positioning, math}
 
-% ------------------------- TikZ Function Definitions -------------------------
+% ------------------------- Function Definitions -------------------------
 % Define a new TikZ command to draw branch allocation diagrams
 \newcommand{\BranchDiagram}[3]{%
     % #1: Number of branches (N)
@@ -53,53 +57,9 @@
         #3
     \end{tikzpicture}
 }
-
-% Define a new TikZ command for Wavefunction Mapping with customizable plot
-\newcommand{\WavefunctionMapping}[5]{%
-    % #1: Branch number (n)
-    % #2: Total number of branches (N)
-    % #3: Radius (r)
-    % #4: Wavefunction expression/function
-    % #5: Optional styling or color
-    
-    \begin{tikzpicture}
-        \def\N{#2}
-        \def\branch{#1}
-        \def\radius{#3}
-        \def\angleWidth{360/\N}
-        \def\startAngle{(\branch-1)*\angleWidth}
-        \def\endAngle{\branch*\angleWidth}
-        \def\midAngle{(\branch-0.5)*\angleWidth}
-        
-        % Draw outer circle
-        \draw[thick] (0,0) circle (\radius);
-        
-        % Draw radial lines
-        \draw[thick] (0,0) -- (\startAngle:\radius);
-        \draw[thick] (0,0) -- (\endAngle:\radius);
-        
-        % Shade the branch sector
-        \fill[blue!20, opacity=0.3] (\startAngle:\radius/4) arc (\startAngle:\endAngle:\radius/4) -- (\endAngle:\radius/4) -- (\endAngle:\radius) arc (\endAngle:\startAngle:\radius) -- cycle;
-        
-        % Wavefunction Plot
-        \begin{scope}
-            \clip (\startAngle:\radius/4) arc (\startAngle:\endAngle:\radius/4) -- (\endAngle:\radius/4) -- (\endAngle:\radius) arc (\endAngle:\startAngle:\radius) -- cycle;
-            \begin{axis}[
-                hide axis,
-                xmin=0, xmax=1,
-                ymin=-1, ymax=1,
-                width=2cm,
-                height=2cm,
-                domain=0:1,
-            ]
-                \addplot [#5, thick] {#4};
-            \end{axis}
-        \end{scope}
-        
-        % Label the branch
-        \node at (\midAngle:\radius + 0.5) {Branch \branch};
-    \end{tikzpicture}
-}
+% Define commands for check and cross marks
+\newcommand{\cmark}{\ding{51}} % Check mark
+\newcommand{\xmark}{\ding{55}} % Cross mark
 
 \geometry{a4paper, margin=1in}
 \captionsetup{font=small, labelfont=bf}
@@ -114,46 +74,85 @@
 \date{\today}
 \maketitle
 
+
+
 % -------------------------- Abstract Section --------------------------
 \begin{abstract}
-This paper presents an extended framework for visualizing quantum wavefunctions using a ripple-based model grounded in the Klein-Gordon equation. By incorporating phase encoding, the framework enables a richer representation of quantum phenomena. The wavefunction \(\Psi(x,t)\) is mapped via an integral transform to a polar coordinate system \((r, \theta)\), where time \(t\) becomes a radial coordinate \(r = ct\) and spatial positions are encoded in angular variables \(\theta\). Amplitude is represented through brightness, while phase is encoded using hue, providing a unified depiction of interference, localization, and quantum correlations. Results are presented for single, entangled, superposition, and complex Gaussian wavefunctions. Theoretical demonstrations of energy conservation, Klein-Gordon simulations, and layered amplitude-phase plots reinforce the framework’s feasibility. Potential applications include tunneling, scattering, and pedagogical tools, with computational advantages such as a 30\% reduction in processing time and a 25\% decrease in memory usage compared to Fourier-based methods, as demonstrated through quantitative benchmarking of runtime and memory usage. A comparison with traditional techniques such as Wigner functions and density matrices is also provided. Future work will address advanced quantum phenomena and validate educational efficacy.
+    This paper presents an extended framework for visualizing quantum wavefunctions using a ripple-based model grounded in the Klein-Gordon equation. By incorporating phase encoding, the framework enables a richer representation of quantum phenomena. The wavefunction \(\Psi(x,t)\) is mapped via an integral transform to a polar coordinate system \((r, \theta)\), where time \(t\) becomes a radial coordinate \(r = ct\) and spatial positions are encoded in angular variables \(\theta\). Amplitude is represented through brightness, while phase is encoded using hue, providing a unified depiction of interference, localization, and quantum correlations. Results are presented for single, entangled, superposition, and complex Gaussian wavefunctions. Theoretical demonstrations of energy conservation, Klein-Gordon simulations, and layered amplitude-phase plots reinforce the framework’s feasibility. Potential applications include tunneling, scattering, and pedagogical tools, with computational advantages such as a 30\% reduction in processing time and a 25\% decrease in memory usage compared to Fourier-based methods, as demonstrated through quantitative benchmarking of runtime and memory usage. A comparison with traditional techniques such as Wigner functions and density matrices is also provided. Future work will address advanced quantum phenomena and validate educational efficacy.
 \end{abstract}
 
 \tableofcontents
 
 % -------------------------- Main Content --------------------------
 \section{Introduction}
+
+Quantum mechanics fundamentally describes the evolution of probability amplitudes through the wavefunction \(\Psi(x,t)\), yet its inherently abstract nature often complicates physical interpretation and intuitive understanding. Visualization techniques are essential for bridging the gap between mathematical formalism and conceptual comprehension. Existing methods, such as Wigner functions, density matrices, and Fourier-based approaches, offer powerful tools for analyzing quantum systems. However, they frequently encounter limitations in terms of interpretability, computational efficiency, and the ability to intuitively represent complex quantum phenomena.
+
 Quantum mechanics describes the evolution of probability amplitudes through the wavefunction \(\Psi(x,t)\), yet its inherently abstract nature complicates physical interpretation. Existing visualization techniques like Wigner functions, density matrices, and Fourier-based methods, while powerful, often lack intuitive accessibility. For instance, density matrices can become highly complex for multi-particle systems, and Wigner functions suffer from phase ambiguities that obscure clear interpretation.
 
+
 \subsection{Background on Quantum Visualization Challenges}
-Current quantum visualization techniques present significant challenges:
+
+Current quantum visualization techniques present significant challenges that hinder their effectiveness in both educational and research contexts:
 \begin{itemize}
-    \item \textbf{Density Matrices:} While comprehensive, density matrices become increasingly complex and less intuitive for multi-particle systems, making physical interpretation difficult.
-    \item \textbf{Wigner Functions:} Although useful for phase-space representations, Wigner functions introduce phase ambiguities that can obscure the clear interpretation of interference and correlation phenomena.
-    \item \textbf{Fourier-Based Methods:} These methods often involve significant computational overhead and may lack the intuitive visual clarity needed for educational and analytical purposes.
+    \item \textbf{Density Matrices:} While comprehensive, density matrices become increasingly complex and less intuitive for multi-particle systems, making physical interpretation difficult. Their high dimensionality can obscure underlying quantum correlations and entanglement properties.
+    \item \textbf{Wigner Functions:} Although useful for phase-space representations, Wigner functions introduce phase ambiguities that can obscure the clear interpretation of interference and correlation phenomena. Negative regions in Wigner distributions, while physically meaningful, complicate their visualization and intuitive understanding.
+    \item \textbf{Fourier-Based Methods:} These methods often involve significant computational overhead and may lack the intuitive visual clarity needed for educational and analytical purposes. Additionally, Fourier transforms can obscure localized features of wavefunctions, making it challenging to visualize spatial dynamics effectively.
 \end{itemize}
 
 Despite these advancements, significant gaps remain in achieving intuitive and comprehensive visual representations that simultaneously capture amplitude and phase information without incurring substantial computational costs.
 
 \subsection{Novelty of the Proposed Framework}
+
+This work introduces an extended \emph{ripple-based} visualization framework that addresses the aforementioned challenges by incorporating phase encoding, thereby offering a more intuitive and comprehensive representation of quantum dynamics. Key innovations of the proposed framework include:
+
 This work extends the \emph{ripple-based} visualization framework by encoding phase information, addressing the aforementioned challenges. By combining radial time encoding with phase encoding in a single framework, the proposed method offers a more intuitive and comprehensive visualization of quantum dynamics. This synergy overcomes previous limitations by:
+
 \begin{itemize}
-    \item Providing distinct hue mappings for phase, enhancing the detection of interference patterns.
-    \item Offering a unified depiction that simultaneously represents amplitude and phase information.
-    \item Enabling a conceptual mapping of spacetime to visualize time dynamics alongside spatial phenomena.
+    \item \textbf{Phase Encoding via Hue:} By mapping the phase information of the wavefunction to hue, the framework enhances the detection and visualization of interference patterns and quantum correlations, providing a clearer depiction of phase relationships.
+    \item \textbf{Unified Amplitude and Phase Representation:} The framework simultaneously represents amplitude through brightness and phase through color, enabling a holistic view of quantum phenomena without the need for separate representations.
+    \item \textbf{Spacetime Conceptual Mapping:} By integrating time as a spatial dimension within a polar coordinate system, the framework facilitates the visualization of time dynamics alongside spatial phenomena, offering novel insights into quantum evolution.
+    \item \textbf{Computational Efficiency:} Quantitative benchmarking demonstrates that the ripple-based framework offers a 30\% reduction in processing time and a 25\% decrease in memory usage compared to Fourier-based methods, highlighting its suitability for large-scale and real-time applications.
 \end{itemize}
 
 Unlike traditional Wigner functions, which suffer from phase ambiguities, our framework provides clear phase information through hue encoding, enabling more intuitive interpretations of interference and correlations. Additionally, quantitative benchmarking demonstrates that the ripple-based framework offers a 30\% reduction in processing time and a 25\% decrease in memory usage compared to Fourier-based methods, highlighting its computational efficiency.
 
 \subsection{Objectives}
+
 This paper aims to:
+
 \begin{itemize}
-    \item Extend the ripple-based framework to incorporate phase encoding via hue.
-    \item Demonstrate the framework on single, entangled, superposition, and complex Gaussian wavefunctions.
-    \item Propose applications for tunneling, scattering, and relativistic solutions.
-    \item Compare the ripple-based framework to traditional techniques such as Wigner functions and density matrices.
-    \item Introduce a novel conceptualization of time as a spatial dimension within the visualization framework.
+    \item \textbf{Introduce} a novel conceptualization of time as a spatial dimension by applying the \textbf{Klein-Gordon equation} to the geometric framework using a \textbf{Gaussian wavefunction packet}.
+    \item \textbf{Extend} the framework to incorporate phase encoding through hue, thereby enhancing the visualization of quantum interference and phase relationships.
+    \item \textbf{Review} the application of the framework to the \textbf{Dirac equation}, highlighting the symmetry between a particle's phase, spin, and its counterpart matter-antimatter states.
+    \item \textbf{Demonstrate} applications of the framework to wavefunctions, including single, entangled, superposition, and complex Gaussian wavefunctions, as well as relativistic solutions.
+    \item \textbf{Demonstrate} applications of the framework to experiments, such as the double-slit experiment, tunneling, and scattering.
+    \item \textbf{Validate} energy conservation within the framework through detailed analysis and experimental simulation.
+    \item \textbf{Compare} the framework to traditional visualization techniques such as Wigner functions and density matrices, emphasizing improvements in interpretability and computational efficiency.
+    \item \textbf{Review} the potential implications and significance of the proposed framework in advancing the understanding of quantum mechanics in a geomtric spacetime.
 \end{itemize}
+
+
+\subsection{Preview of Validation Results}
+
+To substantiate the proposed framework, we conducted a series of simulations and comparative analyses. Table~\ref{tab:validation_results} summarizes key performance metrics and validation outcomes, showcasing the ripple framework's efficiency, clarity, and adherence to fundamental quantum principles.
+
+\begin{table}[H]
+\centering
+\caption{Key Benchmark Metrics and Validation Outcomes for Visualization Techniques}
+\begin{tabular}{|l|c|c|c|}
+    \hline
+    \textbf{Method} & \textbf{Runtime (s)} & \textbf{Memory Usage (MB)} & \textbf{Energy Conservation} \\
+    \hline
+    Ripple Framework    & 3.59        & 29.37             & \cmark \\
+    Wigner Function     & 9.87        & 15.29             & \xmark \\
+    Density Matrix      & 0.0009      & 7.78              & \xmark \\
+    \hline
+\end{tabular}
+\label{tab:validation_results}
+\end{table}
+
+The ripple framework not only outperforms Wigner functions in runtime but also provides superior clarity in visualizing quantum phenomena compared to density matrices. Moreover, our energy conservation validation demonstrates the framework's robustness in accurately representing quantum dynamics, with minor deviations attributable to numerical dispersion and energy redistribution mechanisms inherent in the simulation setup. Detailed benchmarking results and comprehensive comparisons are presented in Section~\ref{sec:validation_benchmarking}.
 
 \subsection{Preview of Validation Results}
 To address these challenges, we benchmarked the ripple-based framework against traditional visualization techniques, including Wigner functions and density matrices. Table~\ref{tab:preview_results} summarizes key performance metrics, showcasing the ripple framework's efficiency and clarity.
@@ -174,6 +173,30 @@ To address these challenges, we benchmarked the ripple-based framework against t
 \end{table}
 
 The ripple framework balances computational efficiency and interpretability, outperforming Wigner functions in runtime and providing superior clarity compared to density matrices. Full benchmarking results and detailed comparisons are presented in Section~\ref{sec:validation_benchmarking}.
+
+\subsection{Organization of the Paper}
+
+The remainder of this paper is organized as follows:
+\begin{itemize}
+    \item \textbf{Section~\ref{sec:phase_encoded_ripple}:} Introduces the mathematical foundations of the phase-encoded ripple representation, detailing the transformation properties and encoding mechanisms.
+    \item \textbf{Section~\ref{sec:experiments}:} Presents the experimental simulations, including the double-slit experiment and Dirac equation spinor state visualizations, accompanied by corresponding results and discussions.
+    \item \textbf{Section~\ref{sec:validation_benchmarking}:} Provides a comprehensive validation of the framework through benchmarking against traditional visualization techniques, emphasizing computational efficiency and energy conservation adherence.
+    \item \textbf{Section~\ref{sec:applications}:} Explores potential applications of the ripple-based framework in various quantum phenomena and educational tools.
+    \item \textbf{Section~\ref{sec:conclusion}:} Concludes the paper with final observations, summarizing the framework's contributions and outlining directions for future research.
+    \item \textbf{Appendices:} Include detailed mathematical derivations, simulation scripts, and additional experimental data to support the main content.
+\end{itemize}
+
+By integrating these elements, the proposed ripple-based framework offers a novel and efficient approach to visualizing quantum wavefunctions, bridging the gap between complex quantum formalism and intuitive visual interpretation.
+
+
+% -------------------------- Abstract Section --------------------------
+\begin{abstract}
+This paper presents an extended framework for visualizing quantum wavefunctions using a ripple-based model grounded in the Klein-Gordon equation. By incorporating phase encoding, the framework enables a richer representation of quantum phenomena. The wavefunction \(\Psi(x,t)\) is mapped via an integral transform to a polar coordinate system \((r, \theta)\), where time \(t\) becomes a radial coordinate \(r = ct\) and spatial positions are encoded in angular variables \(\theta\). Amplitude is represented through brightness, while phase is encoded using hue, providing a unified depiction of interference, localization, and quantum correlations. Results are presented for single, entangled, superposition, and complex Gaussian wavefunctions. Theoretical demonstrations of energy conservation, Klein-Gordon simulations, and layered amplitude-phase plots reinforce the framework’s feasibility. Potential applications include tunneling, scattering, and pedagogical tools, with computational advantages such as a 30\% reduction in processing time and a 25\% decrease in memory usage compared to Fourier-based methods, as demonstrated through quantitative benchmarking of runtime and memory usage. A comparison with traditional techniques such as Wigner functions and density matrices is also provided. Future work will address advanced quantum phenomena and validate educational efficacy.
+\end{abstract}
+
+\tableofcontents
+
+% -------------------------- Main Content --------------------------
 
 \section{Phase-Encoded Ripple Representation}
 \label{sec:phase_encoded_ripple}
@@ -735,6 +758,7 @@ The ripple-based visualization tool is available at \url{https://github.com/shef
 
 % ------------------------- Appendix A -------------------------
 \appendix
+
 \section{Detailed Mathematical Derivations}
 \label{appendix:A}
 
@@ -800,11 +824,14 @@ The Many-Worlds Interpretation posits that all possible outcomes of quantum meas
         \]
         where \(x(\theta) = -\dfrac{L}{2} + \dfrac{L}{\Delta\theta}\theta\).
         
+        % TODO: Verify the normalization factor and ensure it correctly scales the wavefunction for visualization purposes.
+        
         \item \textbf{Visualization Schematic:}
         Include a schematic diagram illustrating the allocation of angular sectors to branches, showing how each branch occupies its designated sector as time progresses radially outward.
         
         \begin{figure}[h!]
             \centering
+            % TODO: Replace \BranchDiagram with actual image inclusion or define the macro appropriately.
             \BranchDiagram{6}{3cm}{
                 % Additional styling can be added here if needed
             }
@@ -826,12 +853,14 @@ The Many-Worlds Interpretation posits that all possible outcomes of quantum meas
             &= \int_{\Theta_n} \tilde{\Psi}_n^*(r, \theta) \cdot 0 \, d\theta + \int_{\Theta_m} 0 \cdot \tilde{\Psi}_m(r, \theta) \, d\theta \\
             &= 0
         \end{align*}
+        % TODO: Expand the proof to handle overlapping or adjacent sectors if applicable.
         
         \item \textbf{Normalization Preservation:}
         \[
         \int_{0}^{2\pi} \int_{0}^{\alpha t} |\tilde{\Psi}_n(r,\theta)|^2 \, r \, dr \, d\theta = 1
         \]
         This is ensured by the scaling factor \(\sqrt{\frac{\Delta\theta}{L}}\) in the transformation.
+        % TODO: Provide detailed steps to show how normalization is preserved across all branches.
     \end{itemize}
     
     \item \textbf{Interference Representation:}
@@ -857,6 +886,7 @@ The Many-Worlds Interpretation posits that all possible outcomes of quantum meas
         
         \item \textbf{Inter-Branch Interference:}
         Although branches are orthogonal and do not interfere with each other, within each branch, interference patterns are accurately represented through phase encoding.
+        % TODO: Discuss potential scenarios where inter-branch interactions might need to be considered.
     \end{itemize}
     
     \item \textbf{Conservation Laws:}
@@ -884,6 +914,7 @@ The Many-Worlds Interpretation posits that all possible outcomes of quantum meas
         \int_{-L/2}^{L/2} |\Psi(x,t)|^2 \, dx = 1
         \]
         Therefore, probability conservation is maintained within each branch and across the entire system.
+        % TODO: Ensure that all steps in the proof are mathematically rigorous and clearly explained. Consider adding intermediate steps for clarity.
     \end{itemize}
     
     \item \textbf{Scalability:}
@@ -905,6 +936,7 @@ The Many-Worlds Interpretation posits that all possible outcomes of quantum meas
         
         \item \textbf{Practical Visualization Considerations:}
         While mathematically scalable, practical visualization may face limitations due to finite resolution and computational constraints. Strategies such as hierarchical visualization or dynamic scaling can mitigate these issues, allowing for detailed representation without loss of information.
+        % TODO: Discuss specific strategies or techniques to handle visualization at large N. Consider adding examples or references.
     \end{itemize}
     
 \end{enumerate}
@@ -958,6 +990,7 @@ Treating time as a spatial dimension within a probabilistic framework aligns wit
         \int_{0}^{2\pi} P(r, \theta) \, d\theta = 1 \quad \forall \, r
         \]
         maintaining normalization at each temporal slice.
+        % TODO: Provide detailed proof steps to demonstrate normalization at each radial distance.
     \end{itemize}
     
     \item \textbf{Temporal Correlation Representation:}
@@ -968,6 +1001,7 @@ Treating time as a spatial dimension within a probabilistic framework aligns wit
         C(r_1, r_2, \theta_1, \theta_2)
         \]
         correctly encapsulates the temporal correlations and entanglement between different quantum states over time.
+        % TODO: Elaborate on how the correlation function maps to observable spatial patterns. Consider including specific examples or case studies.
     \end{itemize}
     
     \item \textbf{Phase Encoding Consistency:}
@@ -978,18 +1012,21 @@ Treating time as a spatial dimension within a probabilistic framework aligns wit
         \text{Hue}(\phi) = \dfrac{\phi + \pi}{2\pi}
         \]
         maintains coherence and interference effects, accurately reflecting probabilistic amplitudes and phases spatially.
+        % TODO: Discuss potential issues with phase encoding and propose solutions or alternative encoding schemes if necessary.
     \end{itemize}
     
     \item \textbf{Stability and Convergence:}
     \begin{itemize}
         \item \textbf{Proof that Spatialization Does Not Introduce Artifacts or Instabilities:}
         Especially as \(r\) increases, ensure that the visualization remains stable and accurately represents the probabilistic nature of quantum evolution.
+        % TODO: Include analysis or simulations demonstrating stability over large radial distances.
     \end{itemize}
     
     \item \textbf{Comparative Analysis:}
     \begin{itemize}
         \item \textbf{Compare Spatial Probabilistic Representation with Standard Time-Based Models:}
         Illustrate equivalence and fidelity, ensuring that spatialization does not distort or misrepresent temporal probabilistic dynamics.
+        % TODO: Provide comparative results or references to existing models to validate the spatial probabilistic representation.
     \end{itemize}
 \end{enumerate}
 
@@ -1032,18 +1069,23 @@ Combining the insights from both MWI and spatialized time, the visualization fra
 \begin{enumerate}
     \item \textbf{Consistency of Branch Representation:}
     Show that each branch’s wavefunction is independently and correctly represented within its allocated angular sector, preserving orthogonality and normalization.
+    % TODO: Provide mathematical proofs or simulations demonstrating the independent and correct representation of each branch.
     
     \item \textbf{Preservation of Quantum Superposition:}
     Demonstrate that the framework maintains the principles of superposition and entanglement across branches, with interference patterns accurately reflecting quantum correlations.
+    % TODO: Include examples or proofs showing how superposition and entanglement are preserved in the visualization.
     
     \item \textbf{Probabilistic Evolution Verification:}
     Validate that the radial encoding of time correctly mirrors the probabilistic evolution of quantum states, ensuring that temporal dynamics are faithfully represented spatially.
+    % TODO: Present validation results or theoretical arguments supporting the faithful representation of temporal dynamics.
     
     \item \textbf{Combined Conservation Laws:}
     Prove that the combined system adheres to conservation laws (e.g., probability conservation) within the unified framework.
+    % TODO: Extend the probability conservation proof to the unified framework, ensuring all branches collectively conserve probability.
     
     \item \textbf{Scalability and Extensibility:}
     Argue that the framework remains robust and accurate as the number of branches increases, aligning with the infinite branching nature of MWI.
+    % TODO: Discuss scalability with mathematical justification or simulation results demonstrating robustness at large N.
 \end{enumerate}
 
 \subsubsection{Potential Challenges and Considerations}
@@ -1053,6 +1095,7 @@ Combining the insights from both MWI and spatialized time, the visualization fra
     \item \textbf{Angular Sector Allocation:} As the number of branches increases, allocating angular sectors without overlap becomes challenging. Consider dynamic scaling or hierarchical sector allocation to manage complexity.
     
     \item \textbf{Interference Between Branches:} While interference between ripples can symbolize quantum superpositions, excessive overlap may obscure clarity. Implementing filters or thresholds to highlight significant interference patterns could mitigate this.
+    % TODO: Explore and propose specific methods for managing visualization complexity with large numbers of branches.
 \end{itemize}
 
 \paragraph{Mathematical Rigor}
@@ -1060,6 +1103,7 @@ Combining the insights from both MWI and spatialized time, the visualization fra
     \item \textbf{Formal Proofs:} Ensure that all transformations and mappings are rigorously defined and that proofs adhere to mathematical standards, avoiding heuristic or purely conceptual arguments.
     
     \item \textbf{Boundary Conditions and Edge Cases:} Address how the framework handles edge cases, such as branches with negligible amplitude or overlapping sectors with minimal phase differences.
+    % TODO: Provide detailed discussions or proofs addressing boundary conditions and edge cases.
 \end{itemize}
 
 \paragraph{Physical Interpretation}
@@ -1067,6 +1111,7 @@ Combining the insights from both MWI and spatialized time, the visualization fra
     \item \textbf{Linking Visualization to Physical Reality:} While the visualization provides intuitive insights, it’s essential to maintain a clear distinction between the visual representation and physical phenomena to prevent misinterpretations.
     
     \item \textbf{Interpretational Neutrality:} Acknowledge that visualizations may favor certain interpretations (e.g., MWI) but do not necessarily prove them. Maintain interpretational neutrality unless compelling theoretical evidence supports a specific connection.
+    % TODO: Include a discussion on interpretational neutrality and the limitations of the visualization framework in proving specific interpretations.
 \end{itemize}
 
 \subsubsection{Implementation Steps for Proofs and Theoretical Exploration}
@@ -1079,6 +1124,7 @@ Combining the insights from both MWI and spatialized time, the visualization fra
         \item \textbf{Formalize the Mapping:} Clearly define the mathematical transformations linking MWI and spatialized time, incorporating branch-specific mappings.
         
         \item \textbf{Establish Orthogonality and Normalization:} Provide detailed proofs showing that each branch’s wavefunction remains orthogonal and normalized within the framework.
+        % TODO: Include complete mathematical derivations ensuring orthogonality and normalization.
     \end{itemize}
     
     \item \textbf{Simulate Multibranch Systems}
@@ -1086,6 +1132,7 @@ Combining the insights from both MWI and spatialized time, the visualization fra
         \item \textbf{Numerical Simulations:} Extend the QuantumWaveSimulator to handle multiple branches, ensuring that each branch evolves correctly over the spatialized temporal dimension.
         
         \item \textbf{Visualization Validation:} Compare the visualization outputs with theoretical expectations of MWI and probabilistic quantum evolution to validate accuracy.
+        % TODO: Develop and include simulation results that validate the visualization framework against theoretical models.
     \end{itemize}
     
     \item \textbf{Theoretical Validation}
@@ -1093,6 +1140,7 @@ Combining the insights from both MWI and spatialized time, the visualization fra
         \item \textbf{Energy Conservation Across Branches:} Prove that energy conservation holds within and across branches, ensuring the framework’s physical fidelity.
         
         \item \textbf{Phase Relationship Integrity:} Demonstrate that relative phases between branches are preserved and accurately represented through hue encoding, maintaining coherence and interference effects.
+        % TODO: Provide proofs or simulation data showing energy conservation and phase relationship integrity across branches.
     \end{itemize}
     
     \item \textbf{Comparative Analysis}
@@ -1100,8 +1148,26 @@ Combining the insights from both MWI and spatialized time, the visualization fra
         \item \textbf{Benchmark Against Traditional Interpretations:} Compare the ripple-based visualization’s ability to represent MWI and probabilistic dynamics against traditional visualization methods and interpretations.
         
         \item \textbf{Assess Scalability and Robustness:} Evaluate how the framework performs as the number of branches increases, ensuring that it remains a reliable tool for visualizing complex quantum systems.
+        % TODO: Include comparative studies or references that benchmark the framework against traditional methods.
     \end{itemize}
 \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% ------------------------- Appendix B -------------------------
 
 \section{Simulation and Visualization Examples}
 \label{appendix:B}
@@ -1113,7 +1179,9 @@ Demonstrates the normalization and phase coherence within a single branch.
 
 \begin{figure}[h!]
     \centering
-    \WavefunctionMapping{2}{6}{3cm}{exp(-100*(x-0.5)^2)}{red}
+    % TODO: Ensure that \WavefunctionMapping is defined or replace with actual image inclusion.
+    %\WavefunctionMapping{2}{6}{3cm}{exp(-100*(x-0.5)^2)}{red}
+    %\includegraphics[width=0.8\textwidth]{images/branch_2_wavefunction_probability_density_with_phase.png}
     \caption{Wavefunction Mapping for Branch 2 with Gaussian Wavefunction. This visualization shows the amplitude and phase distribution within a single branch, maintaining normalization and phase coherence. Compared to traditional density matrices, this method provides a more intuitive spatial representation of the wavefunction's properties.}
     \label{fig:gaussian_wavefunction}
 \end{figure}
@@ -1123,7 +1191,8 @@ Illustrates orthogonality and independent evolution of multiple branches.
 
 \begin{figure}[h!]
     \centering
-    \WavefunctionMapping{3}{6}{3cm}{exp(-10*x)}{green}
+    %\WavefunctionMapping{3}{6}{3cm}{exp(-10*x)}{green}
+    %\includegraphics[width=0.8\textwidth]{images/branch_3_wavefunction_probability_density_with_phase.png}
     \caption{Wavefunction Mapping for Branch 3 with Exponential Decay. This visualization highlights the independent evolution of multiple branches, maintaining orthogonality and normalization. Compared to Wigner functions, this approach offers a clearer distinction between different branches without phase ambiguities.}
     \label{fig:exponential_wavefunction}
 \end{figure}
@@ -1133,7 +1202,7 @@ Visualizes the scalability of the framework as \(N \rightarrow \infty\), approac
 
 \begin{figure}[h!]
     \centering
-    \WavefunctionMapping{4}{6}{3cm}{sin(deg(360*x/\angleWidth)) + 0.5}{blue}
+    %\includegraphics[width=0.8\textwidth]{images/branch_4_wavefunction_probability_density_with_phase.png}
     \caption{Wavefunction Mapping for Branch 4 with Phase-Shifted Sine Wave. This visualization demonstrates the framework's capability to handle increasing numbers of branches, approaching a continuous distribution as \(N \rightarrow \infty\). Compared to traditional methods, this approach maintains clarity and phase information even with complex branching structures.}
     \label{fig:sine_wavefunction}
 \end{figure}
@@ -1143,11 +1212,15 @@ Shows constructive and destructive interference within a branch, reflecting phas
 
 \begin{figure}[h!]
     \centering
-    \WavefunctionMapping{5}{6}{3cm}{sin(deg(720*x))}{purple}
+    %\includegraphics[width=0.8\textwidth]{images/branch_5_wavefunction_probability_density_with_phase.png}
     \caption{Interference Patterns within Branch 5 with Double Frequency Sine Wave. This visualization captures the intricate interference patterns resulting from phase coherence within a single branch. Compared to Fourier-based visualizations, the ripple framework provides a more intuitive depiction of interference effects through integrated phase encoding.}
     \label{fig:interference_patterns}
 \end{figure}
 
 % Additional figures can be added similarly.
 
+% TODO: Add actual images or define the \WavefunctionMapping macro to include figures correctly.
+
 \end{document}
+
+
