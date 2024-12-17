@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1734357956.87018 "/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex" "ripples_in_spacetime.pdf" "ripples_in_spacetime" 1734357959.53725 0
-  "/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex" 1734357956.60767 90033 c3cea1b2c4367ecdcf4a81246c4f6e20 ""
+["pdflatex"] 1734384737.50779 "/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex" "ripples_in_spacetime.pdf" "ripples_in_spacetime" 1734384743.17156 0
+  "/Users/sefunmiashiru/Dev/space-time-geometry/paper/ripples_in_spacetime.tex" 1734384730.90237 105901 ef3700d2ac37002d3ac2b95bce3082e1 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
@@ -46,6 +46,7 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1248133631 36118 fad905eba93cff5bce1e185fe980a177 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb" 1248133631 24252 1e4e051947e12dfb50fee0b7f4e26e3a ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb" 1215737283 136101 f533469f523533d38317ab5729d00c8a ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb" 1136849748 45955 6dfcb282cf470ceb18d57d017b7898d6 ""
@@ -267,10 +268,10 @@
   "images/tunneling_wavefunction_2d_polar_probability_density_with_phase.png" 1734233574.77981 369518 7c2630a03ce35a027ecb247daaee6f57 ""
   "images/tunneling_wavefunction_3d_polar_probability_density_with_phase.png" 1734233574.78052 199545 99e0595fdc641334fc8dc84a776b6bba ""
   "images/tunneling_wavefunction_probability_density_with_phase.png" 1734233574.78114 180553 f57eaa4d3e45e0a4d1b795bf3ab4ca39 ""
-  "ripples_in_spacetime.aux" 1734357959.44646 37994 0d66d1e140e78b0cb45f75d9d09fbd56 "pdflatex"
-  "ripples_in_spacetime.out" 1734357959.44845 13061 3b9bb64e93fc0af0009d455e06403305 "pdflatex"
-  "ripples_in_spacetime.tex" 1734357956.60767 90033 c3cea1b2c4367ecdcf4a81246c4f6e20 ""
-  "ripples_in_spacetime.toc" 1734357959.44863 8812 ec98a0c495abef85b9cbe246603228ce "pdflatex"
+  "ripples_in_spacetime.aux" 1734384743.02175 40141 7c5ef2e336bfeae6602bb2c547294587 "pdflatex"
+  "ripples_in_spacetime.out" 1734384743.02522 15022 f53b36113ee14f56d1bbd42361fe4b0e "pdflatex"
+  "ripples_in_spacetime.tex" 1734384730.90237 105901 ef3700d2ac37002d3ac2b95bce3082e1 ""
+  "ripples_in_spacetime.toc" 1734384743.0255 10011 bc0fabdd24e8fe7d97062fee16e8f363 "pdflatex"
   (generated)
   "ripples_in_spacetime.aux"
   "ripples_in_spacetime.log"
