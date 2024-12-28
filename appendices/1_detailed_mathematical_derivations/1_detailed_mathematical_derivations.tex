@@ -1,0 +1,104 @@
+
+\section{Appendix A: Detailed Mathematical Derivations}
+\label{appendix:A}
+
+\subsection{Coordinate Transformation Justification}
+The transition from Cartesian to polar (or cylindrical) coordinates underpins our approach of interpreting time as a spatial dimension. By setting \( r = c\,t \), time is scaled by the speed of light to maintain consistent length units. This choice resonates with relativistic principles, where space and time are woven into a unified Minkowski framework.
+
+\subsubsection{Scaling Factor Selection}
+The factor \(\sqrt{\frac{180^\circ}{L}}\) ensures wavefunction normalization after the coordinate transformation:
+\[
+\int_{0}^{2\pi} \int_{0}^{c\,t} \bigl|\tilde{\Psi}(r,\theta)\bigr|^2 \,r\,dr\,d\theta \;=\; 1.
+\]
+This constant preserves the total probability of the system, thereby safeguarding the physical validity of the quantum state.
+
+\subsection{Normalization Preservation}
+To rigorously demonstrate that normalization is maintained under the polar transformation, consider:
+\[
+\tilde{\Psi}(r, \theta) \;=\;
+\begin{cases}
+\sqrt{\frac{180^\circ}{L}} \,\Psi\bigl(x(\theta), t\bigr), & 0^\circ \le \theta < 180^\circ, \\[6pt]
+\sqrt{\frac{180^\circ}{L}} \,\Psi^*\bigl(x(\theta - 180^\circ), t\bigr), & 180^\circ \le \theta < 360^\circ,
+\end{cases}
+\]
+where \(r = c\,t\). Thus,
+\[
+\int_{0}^{2\pi} \!\int_{0}^{c\,t} \bigl|\tilde{\Psi}(r,\theta)\bigr|^2 \,r\,dr\,d\theta
+\;=\;
+\frac{180^\circ}{L}
+\int_{0}^{2\pi} \!\int_{0}^{c\,t}
+\bigl|\Psi\bigl(x(\theta), t\bigr)\bigr|^2 \,r\,dr\,d\theta.
+\]
+Using \(x = x(\theta)\) and \(dx = \tfrac{L}{180^\circ}\,d\theta\), the integral over \(\theta\) recovers the original Cartesian normalization:
+\[
+\frac{180^\circ}{L} \,\cdot\,\frac{L}{180^\circ}
+\int_{-L/2}^{L/2} \!\int_{0}^{c\,t}
+\bigl|\Psi(x,t)\bigr|^2 \,c\,dt\,dx
+\;=\;
+\int_{-L/2}^{L/2} \!\bigl|\Psi(x,t)\bigr|^2\,dx
+\;=\; 1,
+\]
+assuming \(\Psi(x,t)\) is normalized in its original Cartesian form.
+
+\subsection{Phase Encoding and Interference}
+Representing the wavefunction’s phase \(\phi\) via hue is vital for visualizing quantum interference:
+\[
+\text{Hue}(\phi) \;=\; \frac{\phi + \pi}{2\pi}, 
+\quad \phi \in [-\pi, \pi].
+\]
+This mapping linearly translates phase angles to a continuous color spectrum, allowing constructive (\(\Delta \phi \approx 0\)) and destructive (\(\Delta \phi \approx \pi\)) interference to be readily discernible.
+
+\subsubsection{Interference Patterns}
+For a superposition of two wavefunctions, \(\Psi = \Psi_1 + \Psi_2\), with phases \(\phi_1\) and \(\phi_2\), the probability density is
+\[
+\bigl|\Psi\bigr|^2
+\;=\;
+\bigl|\Psi_1\bigr|^2
+\;+\;
+\bigl|\Psi_2\bigr|^2
+\;+\;
+2\,\bigl|\Psi_1\bigr|\bigl|\Psi_2\bigr|\cos\bigl(\phi_1 - \phi_2\bigr).
+\]
+The term \(\cos(\phi_1 - \phi_2)\) governs the interference pattern, which appears as variations in both amplitude and hue.
+
+\subsection{Normalization and Orthogonality in MWI}
+Within the Many-Worlds Interpretation (MWI), each branch \(n\) is orthogonal to every other branch \(m\):
+\[
+\int_{0}^{2\pi}
+\tilde{\Psi}_n^*(r,\theta)\,\tilde{\Psi}_m(r,\theta)\,d\theta
+\;=\; 0,
+\quad n \;\neq\; m.
+\]
+Distinct, non-overlapping angular sectors maintain orthogonality by allocating each branch to a unique segment of \(\theta\). The ripple-based framework preserves total probability across all branches via normalized wavefunctions in each sector.
+
+\subsection{Energy Conservation}
+For a Klein--Gordon wavefunction \(\Psi(x,t)\) obeying
+\[
+\Box\,\Psi
+\;-\;
+\frac{m^2 c^2}{\hbar^2}\,\Psi
+\;=\; 0,
+\]
+the energy density is
+\[
+\mathcal{E}
+\;=\;
+\hbar^2\bigl|\partial_t \Psi\bigr|^2
+\;+\;
+\hbar^2\,c^2\,\bigl|\partial_x \Psi\bigr|^2
+\;+\;
+m^2\,c^4\,\bigl|\Psi\bigr|^2.
+\]
+Integrating \(\mathcal{E}\) over all space yields a constant total energy
+\[
+E
+\;=\;
+\int_{-L/2}^{L/2}
+\mathcal{E}\,dx
+\;=\;
+\text{const.},
+\]
+which the ripple-based framework preserves due to its consistent normalization. Thus, energy remains conserved under the polar transformation, confirming physical fidelity for relativistic wavefunctions.
+
+
+\newpage
