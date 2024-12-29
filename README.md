@@ -29,15 +29,8 @@ This repository contains the **Space-Time Geometry Framework** for visualizing q
 ├── paper
 │   ├── images               # Placeholder or actual figures for the paper
 │   ├── references.bib       # BibTeX references
-│   ├── ripples_in_spacetime.aux
-│   ├── ripples_in_spacetime.bbl
-│   ├── ripples_in_spacetime.blg
-│   ├── ripples_in_spacetime.log
-│   ├── ripples_in_spacetime.out
 │   ├── ripples_in_spacetime.pdf   # Compiled PDF
-│   ├── ripples_in_spacetime.synctex.gz
 │   ├── ripples_in_spacetime.tex   # Main LaTeX source
-│   └── ripples_in_spacetime.toc
 │
 ├── draft_paper.ipynb       # Jupyter notebook for prototyping or data analysis
 ├── profile.prof            # Profiling output (if relevant to performance tests)
