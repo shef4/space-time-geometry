@@ -4,7 +4,7 @@
 This repository contains the **Space-Time Geometry Framework** for visualizing quantum wavefunctions with time treated as a spatial-like dimension. The framework uses a polar (or cylindrical) coordinate representation of spacetime, incorporates phase encoding via hue, and provides both a theoretical foundation and practical examples (e.g., Klein–Gordon, Dirac, double-slit, tunneling scenarios).
 
 ### Key Features
-- **Polar-Coordinate Wavefunction Mapping**: Transforms \((x,t)\to(r,\theta)\) to unify time and space in a single 2D or 3D plot.
+- **Polar-Coordinate Wavefunction Mapping**: Transforms \(x,t\) to \(r,\theta\) to unify time and space in a single 2D or 3D plot.
 - **Phase Encoding**: Visualizes quantum interference through a hue-based color map.
 - **Relativistic Extensions**: Includes discussions on Minkowski spacetime, Lorentz invariance, and conceptual paths toward curved metrics in general relativity.
 - **Many-Worlds Interpretation (MWI)**: Demonstrates how separate “branches” can be represented as orthogonal angular sectors.
