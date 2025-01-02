@@ -1,10 +1,5 @@
 # Space-Time Geometry Framework
 
-**Author**: Your Name  
-**Date**: Month Year  
-
----
-
 ## Overview
 This repository contains the **Space-Time Geometry Framework** for visualizing quantum wavefunctions with time treated as a spatial-like dimension. The framework uses a polar (or cylindrical) coordinate representation of spacetime, incorporates phase encoding via hue, and provides both a theoretical foundation and practical examples (e.g., Klein–Gordon, Dirac, double-slit, tunneling scenarios).
 
